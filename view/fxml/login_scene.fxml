@@ -21,26 +21,27 @@
 
 		<Label text="Login:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
 
-		<TextField fx:id="loginField" GridPane.columnIndex="1" onKeyPressed="#handleLoginChanged"
-			GridPane.rowIndex="1" />
+		<TextField fx:id="loginField" GridPane.columnIndex="1"
+			onKeyPressed="#handleLoginChanged" GridPane.rowIndex="1" />
 
 		<Label text="Password:" GridPane.columnIndex="0"
 			GridPane.rowIndex="2" />
 
 		<PasswordField fx:id="passwordField"
-			GridPane.columnIndex="1" GridPane.rowIndex="2" onKeyPressed="#handlePasswordChenged"/>
+			GridPane.columnIndex="1" GridPane.rowIndex="2" onKeyPressed="#handlePasswordChenged"
+			onAction="#handlePasswordFieldAction"/>
 
 		<Text text="Sign in as a guest" underline="true" fill="BLUE"
-			GridPane.columnIndex="0" GridPane.rowIndex="4"
-			onMouseClicked="#handleSignInAsGuest">
+			GridPane.columnIndex="0" GridPane.rowIndex="4" onMouseClicked="#handleSignInAsGuest">
 			<cursor>
 				<Cursor fx:constant="CLOSED_HAND" />
 			</cursor>
 		</Text>
 
-		<HBox  spacing="10" alignment="bottom_right" GridPane.columnIndex="1"
+		<HBox spacing="10" alignment="bottom_right" GridPane.columnIndex="1"
 			GridPane.rowIndex="4">
-				<Button fx:id="submitButton" text="Sign In" onAction="#handleSubmitButtonAction" disable="true"/>
+			<Button fx:id="submitButton" text="Sign In" onAction="#handleSubmitButtonAction"
+				disable="true" />
 		</HBox>
 
 		<Text text="Wrong login or password!" fx:id="warningText" fill="RED"

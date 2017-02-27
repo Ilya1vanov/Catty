@@ -10,4 +10,9 @@ public class FileObject extends AbstractFileObject {
 		super(file);
 		// TODO Auto-generated constructor stub
 	}
+	
+	public FileObject(String name, long size) {
+		super(name);
+		this.size = size;
+	}
 }

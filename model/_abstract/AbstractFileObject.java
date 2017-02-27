@@ -6,8 +6,8 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public abstract class AbstractFileObject {
-	private String name;
-	private long size;
+	protected String name;
+	protected long size;
 	
 	protected AbstractFileObject(File file) {
 		name = file.getName();
@@ -18,22 +18,17 @@ public abstract class AbstractFileObject {
 			e.printStackTrace();
 		}
 	}
+	
+	protected AbstractFileObject(String name) {
+		this.name = name;
+	}
 
 	public String getName() {
 		return name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
-	}
-
 	public String getSize() {
 		// human readable
 		return String.valueOf(size);
-	}
-
-	public void setSize(long size) {
-		this.size = size;
-	}
-	
+	}	
 }

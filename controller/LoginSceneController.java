@@ -1,9 +1,12 @@
 package com.ilya.ivanov.catty_cathalog.controller;
 
 
+import java.sql.SQLException;
+
 //import java.sql.Date;
 
-import com.ilya.ivanov.catty_cathalog.model._enum.User;
+import com.ilya.ivanov.catty_cathalog.model._enum.UserType;
+import com.ilya.ivanov.catty_cathalog.model.implementation.DAODatabase;
 
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -25,20 +28,22 @@ public class LoginSceneController {
 	@FXML
 	private javafx.scene.control.TextField loginField;
 	@FXML Button submitButton;
+	
+	public static DAODatabase dao = new DAODatabase();
 
 	@FXML
 	public void handleSubmitButtonAction(ActionEvent event) {
-//		if (DAO.SignIn(loginField.getText(), passwordField.getText())) {
-//			
-//		}
 		// Date date = Date.valueOf("");
-		
-		warningText.setVisible(true);
-		passwordField.requestFocus();
+		if (dao.signIn(loginField.getText(), passwordField.getText())) {
+			
+		}
+		else {
+			warningText.setVisible(true);
+			passwordField.requestFocus();
+		}
 	}
 
 	@FXML public void handleSignInAsGuest(MouseEvent event) {
-		MainSceneController.user = User.GUEST;
 		changeSceneToMain((Stage) ((Node) event.getSource()).getScene().getWindow());
 	}
 	
@@ -55,6 +60,16 @@ public class LoginSceneController {
 		};
 		loginField.lengthProperty().addListener(listner);
 		passwordField.lengthProperty().addListener(listner);
+		
+		try {
+			dao.connect();
+		} catch (SQLException e) {
+			// error window
+			// terminate or try again
+			
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	@FXML public void handleLoginChanged() {
@@ -79,5 +94,10 @@ public class LoginSceneController {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	@FXML public void handlePasswordFieldAction(ActionEvent event) {
+		submitButton.requestFocus();
+		handleSubmitButtonAction(event);
 	}
 }

@@ -1,6 +1,7 @@
 package com.ilya.ivanov.catty_cathalog.model._interface;
 
 import java.io.File;
+import java.sql.SQLException;
 import java.util.List;
 
 import javafx.scene.control.TreeItem;
@@ -13,6 +14,11 @@ import javafx.scene.control.TreeItem;
  * @param <FileObject> is a class that represents files in storage
  */
 public interface IDAO<FileObject> {
+	/**
+	 * @throws SQLException if a database access error occurs
+	 * 
+	 */
+	public boolean connect() throws SQLException;
 	
 	/**
 	 * verify user with given login and password to access storage

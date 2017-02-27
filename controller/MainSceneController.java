@@ -5,7 +5,10 @@ import java.io.File;
 import java.util.List;
 
 import com.ilya.ivanov.catty_cathalog.model._abstract.AbstractFileObject;
-import com.ilya.ivanov.catty_cathalog.model._enum.User;
+import com.ilya.ivanov.catty_cathalog.model._enum.UserType;
+import com.ilya.ivanov.catty_cathalog.model.implementation.DirectoryObject;
+import com.ilya.ivanov.catty_cathalog.model.implementation.FileObject;
+import com.ilya.ivanov.catty_cathalog.model.implementation.User;
 import com.ilya.ivanov.catty_cathalog.view.java.View;
 
 import javafx.beans.property.ReadOnlyStringWrapper;
@@ -21,6 +24,7 @@ import javafx.scene.control.Pagination;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeTableColumn;
 import javafx.scene.control.TreeTableView;
 import javafx.scene.input.MouseEvent;
@@ -62,7 +66,6 @@ public class MainSceneController {
 
 	
 	@FXML public void initialize() {
-//		workingTreeL__Table;
 		// search
 		searchField.lengthProperty().addListener(new ChangeListener<Number>() {
 			@Override
@@ -70,10 +73,9 @@ public class MainSceneController {
 				
 			}
 		});
-		
 		userNameLetter.setText(String.valueOf(user.getName().charAt(0)).toUpperCase());
 		
-		switch (user) {
+		switch (user.getType()) {
 		case GUEST:
 			workingTreeL__statusBar.setText("Read-only mode");
 			controlButtons.setDisable(true);
@@ -95,11 +97,18 @@ public class MainSceneController {
 	            new ReadOnlyStringWrapper(param.getValue().getValue().getSize())
 	        );
 		
-		// pullWorkingTree
+		// pullWorkingTree				
+		TreeItem<AbstractFileObject> root1 = new TreeItem(new DirectoryObject("Dir1"));
 		
+		TreeItem<AbstractFileObject> root = new TreeItem(new DirectoryObject("/"));
+		root.setExpanded(true);
+		root.getChildren().addAll(root1, new TreeItem(new DirectoryObject("Dir2")));
 		
+		root1.getChildren().addAll(
+				new TreeItem(new FileObject("File1", 12)), 
+				new TreeItem(new FileObject("File2", 28)));
 		
-		workingTreeL__Table.setRoot(null);
+		workingTreeL__Table.setRoot(root);
 	}
 	
 	@FXML public void handleSignOut(MouseEvent event) {
