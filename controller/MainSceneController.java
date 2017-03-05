@@ -1,148 +1,131 @@
-package com.ilya.ivanov.catty_cathalog.controller;
+package com.ilya.ivanov.catty_catalog.controller;
 
+
+import com.ilya.ivanov.catty_catalog.model.Model;
+import com.ilya.ivanov.catty_catalog.model.file.AbstractFileObject;
+import com.ilya.ivanov.catty_catalog.view.chooser.FileChooserPopup;
+import com.ilya.ivanov.catty_catalog.view.stages.StageDriver;
+import com.ilya.ivanov.catty_catalog.view.columns.ColumnModel;
+import com.ilya.ivanov.catty_catalog.view.columns.TableColumnFactory;
+import com.ilya.ivanov.catty_catalog.view.columns.TreeTableColumnFactory;
+import com.ilya.ivanov.catty_catalog.view.tabs.TabFactory;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.*;
+import javafx.scene.input.KeyCode;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 
 import java.io.File;
 import java.util.List;
+import java.util.Map;
 
-import com.ilya.ivanov.catty_cathalog.model._abstract.AbstractFileObject;
-import com.ilya.ivanov.catty_cathalog.model._enum.UserType;
-import com.ilya.ivanov.catty_cathalog.model.implementation.DirectoryObject;
-import com.ilya.ivanov.catty_cathalog.model.implementation.FileObject;
-import com.ilya.ivanov.catty_cathalog.model.implementation.User;
-import com.ilya.ivanov.catty_cathalog.view.java.View;
-
-import javafx.beans.property.ReadOnlyStringWrapper;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.Pagination;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
-import javafx.scene.control.TreeItem;
-import javafx.scene.control.TreeTableColumn;
-import javafx.scene.control.TreeTableView;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
-import javafx.stage.FileChooser;
-import javafx.stage.FileChooser.ExtensionFilter;
-import javafx.stage.Stage;
-import javafx.scene.text.Text;
-import javafx.scene.control.Label;
-import javafx.scene.control.Button;
-import javafx.scene.layout.HBox;
 
 public class MainSceneController {
 	@FXML HBox controlButtons;
-	@FXML Button retrieveButton;
+    @FXML Button addButton;
 	@FXML Button deleteButton;
-	@FXML Button addButton;
 	
 	@FXML TextField searchField;
-		
-	@FXML StackPane tableStack;
+	@FXML TabPane tabPane;
+
+//	@FXML StackPane tableStack;
 	
 	@FXML VBox workingTreeLayout;
-	@FXML TreeTableView<AbstractFileObject> workingTreeL__Table;
-	@FXML TreeTableColumn<AbstractFileObject, String> workingTreeT__fileColumn;
-	@FXML TreeTableColumn<AbstractFileObject, String> workingTreeT__sizeColumn;
-	
+	@FXML TreeTableView<AbstractFileObject> workingTreeL__TreeTable;
+
 	@FXML VBox searchResultsLayout;
 	@FXML TableView<AbstractFileObject> searchL__resultTable;
-	@FXML TableColumn<AbstractFileObject, String> searchT__fileColumn;
-	@FXML TableColumn<AbstractFileObject, String> searchT__sizeColumn;
-	@FXML Pagination searchL__paginator;
+	@FXML Pagination searchL__pagination;
 
 	@FXML Text userNameLetter;
 	@FXML Label workingTreeL__statusBar;	
-	
-	public static User user;
 
-	
+
 	@FXML public void initialize() {
 		// search
-		searchField.lengthProperty().addListener(new ChangeListener<Number>() {
-			@Override
-			public void changed(ObservableValue<? extends Number> arg0, Number oldVal, Number newVal) {
-				
-			}
-		});
-		userNameLetter.setText(String.valueOf(user.getName().charAt(0)).toUpperCase());
-		
-		switch (user.getType()) {
-		case GUEST:
-			workingTreeL__statusBar.setText("Read-only mode");
-			controlButtons.setDisable(true);
-			break;
-		case USER:
-			deleteButton.setDisable(true);
-			break;
-		default:
-			break;
-		}
-		
-		workingTreeT__fileColumn.setCellValueFactory(
-	            (TreeTableColumn.CellDataFeatures<AbstractFileObject, String> param) -> 
-	            new ReadOnlyStringWrapper(param.getValue().getValue().getName())
-	        );
+		// ESC handler
+        searchField.setOnKeyPressed(event -> {
+            if (event.getCode().equals(KeyCode.ESCAPE))
+                handleSearchCrossClicked();
+        });
 
-		workingTreeT__sizeColumn.setCellValueFactory(
-	            (TreeTableColumn.CellDataFeatures<AbstractFileObject, String> param) -> 
-	            new ReadOnlyStringWrapper(param.getValue().getValue().getSize())
-	        );
-		
-		// pullWorkingTree				
-		TreeItem<AbstractFileObject> root1 = new TreeItem(new DirectoryObject("Dir1"));
-		
-		TreeItem<AbstractFileObject> root = new TreeItem(new DirectoryObject("/"));
-		root.setExpanded(true);
-		root.getChildren().addAll(root1, new TreeItem(new DirectoryObject("Dir2")));
-		
-		root1.getChildren().addAll(
-				new TreeItem(new FileObject("File1", 12)), 
-				new TreeItem(new FileObject("File2", 28)));
-		
-		workingTreeL__Table.setRoot(root);
+        // if search field is empty then show working tree layout
+        searchField.lengthProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue.equals(0)) {
+                workingTreeLayout.setVisible(true);
+                searchResultsLayout.setVisible(false);
+            }
+        });
+
+        // i should place code below in snippet than executes when user was chosen or when login scene changes to main
+
+        // show first capitalized letter of username in top-right corner
+//		userNameLetter.setText(String.valueOf(Model.user.getName().charAt(0)).toUpperCase());
+
+        // set workspace according to user's permissions
+//		switch (Model.user.getType()) {
+//			case guest:
+//				workingTreeL__statusBar.setText("Read-only mode");
+//				controlButtons.setDisable(true);
+//				break;
+//			case user:
+//				workingTreeL__statusBar.setText("Your quota for uploading files is " + Model.user.getQuota() + " for today");
+//				break;
+//			case admin:
+//				workingTreeL__statusBar.setText("Full-capacity mode");
+//				break;
+//		}
+
+
+        // create tabs and attach them to tabPane according to the list of file categories
+        for (String category : Model.fileCategories) {
+            tabPane.getTabs().add(TabFactory.getInstance(category));
+        }
+
+        // deselect tabs. important cause otherwise selected tab
+        // will be empty. selection will be fired manually below
+        tabPane.getSelectionModel().clearSelection();
+
+        // set new root of working tree when tab selection was changed
+        tabPane.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+            if (workingTreeL__TreeTable.isVisible())
+                workingTreeL__TreeTable.setRoot(Model.getRoot(newValue.getId()));
+        });
+
+        // manual fired selection
+        tabPane.getSelectionModel().selectFirst();
+
+        // set columns resize policy
+        searchL__resultTable.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
+
+        // creating TableColumns
+        for (Map.Entry<String, ColumnModel> entry : Model.modelColumnsMap.entrySet())
+            searchL__resultTable
+                    .getColumns()
+                    .add((TableColumn<AbstractFileObject, String>) (new TableColumnFactory()).getColumn(entry.getKey(), entry.getValue()));
+
+        // set columns resize policy
+        workingTreeL__TreeTable.setColumnResizePolicy(TreeTableView.CONSTRAINED_RESIZE_POLICY);
+
+        // creating TreeTableColumns
+        for (Map.Entry<String, ColumnModel> entry : Model.modelColumnsMap.entrySet())
+            workingTreeL__TreeTable
+                    .getColumns()
+                    .add((TreeTableColumn) (new TreeTableColumnFactory()).getColumn(entry.getKey(), entry.getValue()));
 	}
 	
-	@FXML public void handleSignOut(MouseEvent event) {
+	@FXML public void handleSignOut() {
 		try {
-			Parent loginRoot = FXMLLoader.load(getClass().getResource("../view/fxml/login_scene.fxml"));
-			Stage primaryStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-			
-			primaryStage.setTitle("Welcome");
-			primaryStage.setWidth(View.LOGIN_WIDTH);
-			primaryStage.setHeight(View.LOGIN_HEIGHT);
-			primaryStage.setResizable(false);
-	
-			primaryStage.setScene(new Scene(loginRoot));
-	
-			primaryStage.show();
+            StageDriver.setStage("login");
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
 	}
 
 	@FXML public void handleAddButtonAction(ActionEvent event) {
-		// add some file types
-		// parse selected partition
-		
-		Stage primaryStage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-		
-		FileChooser fileChooser = new FileChooser();
-		fileChooser.setTitle("Select files");
-		fileChooser.getExtensionFilters().addAll(
-		        new ExtensionFilter("Document Files", "*.txt", "*.pdf", ".doc", ".docx", ".rtf"),
-		        new ExtensionFilter("Audio Files", "*.wav", "*.mp3", "*.aac"),
-		        new ExtensionFilter("Video Files", "*.avi", "*.mp4", "*.wav"),
-		        new ExtensionFilter("All Files", "*.*"));
-		List<File> selectedFiles = fileChooser.showOpenMultipleDialog(primaryStage);
+		List<File> selectedFiles = FileChooserPopup.callFileChooser(tabPane.getSelectionModel().getSelectedItem().getId());
 		if (selectedFiles != null) {
 			// pushRequest
 			System.out.println("Files selected!");
@@ -154,6 +137,7 @@ public class MainSceneController {
 	}
 
 	@FXML public void handleDeleteButtonAction(ActionEvent event) {
+		tabPane.getSelectionModel().getSelectedItem().getId();
 		// deleteRequest
 		// render new view
 	}
@@ -165,4 +149,7 @@ public class MainSceneController {
 		}
 	}
 
+	public void handleSearchCrossClicked() {
+		searchField.setText("");
+	}
 }

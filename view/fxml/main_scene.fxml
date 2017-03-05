@@ -1,51 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.geometry.*?>
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<VBox maxWidth="800.0" prefHeight="400.0" prefWidth="600.0"
-	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
-	fx:controller="com.ilya.ivanov.catty_cathalog.controller.MainSceneController">
+<VBox maxWidth="800.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ilya.ivanov.catty_catalog.controller.MainSceneController">
 	<children>
 
-		<AnchorPane prefHeight="45.0" prefWidth="600.0">
+		<AnchorPane prefHeight="45.0" prefWidth="600.0" VBox.vgrow="NEVER">
 			<children>
 
-				<HBox fx:id="controlButtons" alignment="CENTER_LEFT"
-					prefHeight="100.0" prefWidth="460.0" spacing="10.0"
-					AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
-					AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="0.0">
+				<HBox fx:id="controlButtons" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="460.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="0.0">
 					<children>
-						<Button fx:id="addButton" onAction="#handleAddButtonAction"
-							text="Add" />
-						<Button fx:id="deleteButton" onAction="#handleDeleteButtonAction"
-							text="Delete" />
-						<Button fx:id="retrieveButton" text="Retrieve" />
+						<Button fx:id="addButton" onAction="#handleAddButtonAction" text="Add" />
+						<Button fx:id="deleteButton" onAction="#handleDeleteButtonAction" text="Delete" />
 					</children>
 					<padding>
 						<Insets bottom="5.0" left="20.0" right="5.0" top="5.0" />
 					</padding>
 				</HBox>
 
-				<HBox alignment="CENTER_RIGHT" layoutX="292.0" layoutY="2.0"
-					maxWidth="-Infinity" minWidth="-Infinity" prefHeight="55.0"
-					prefWidth="150.0" spacing="7.0" AnchorPane.bottomAnchor="0.0"
-					AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+				<HBox alignment="CENTER_RIGHT" prefHeight="55.0" prefWidth="150.0" spacing="7.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
 					<children>
 						<StackPane prefHeight="35.0" prefWidth="26.0">
 							<children>
-								<Circle fill="#b1baff" radius="16.0" stroke="#2d1fff"
-									strokeDashOffset="2.0" strokeType="INSIDE" strokeWidth="0.0"
-									style="-fx-stroke-dash-array: 5;" />
-								<Text fx:id="userNameLetter" fill="#4c18dd" strokeType="OUTSIDE"
-									strokeWidth="0.0" text="G">
+								<Circle fill="#b1baff" radius="16.0" />
+								<Text fx:id="userNameLetter" fill="#4c18dd" text="G" translateX="-1" translateY="-1">
 									<font>
 										<Font name="FreeSerif Bold" size="24.0" />
 									</font>
@@ -56,11 +54,9 @@
 						<AnchorPane onMouseClicked="#handleSignOut">
 							<children>
 
-								<Label layoutX="25.0" layoutY="5.0" text="Sign Out"
-									underline="true" />
+								<Label layoutX="25.0" layoutY="5.0" text="Sign Out" underline="true" />
 
-								<ImageView fitHeight="25.0" fitWidth="25.0"
-									pickOnBounds="true" preserveRatio="true">
+								<ImageView fitHeight="25.0" fitWidth="25.0">
 									<image>
 										<Image url="@../../resources/sign-out-icon.png" />
 									</image>
@@ -71,7 +67,7 @@
 
 							</children>
 							<cursor>
-								<Cursor fx:constant="CLOSED_HAND" />
+								<Cursor fx:constant="HAND" />
 							</cursor>
 							<HBox.margin>
 								<Insets bottom="5.0" top="5.0" />
@@ -87,13 +83,9 @@
 			</children>
 		</AnchorPane>
 
-		<AnchorPane VBox.vgrow="NEVER">
-			<children>
+		<StackPane alignment="CENTER_RIGHT" VBox.vgrow="NEVER">
 
-				<TextField fx:id="searchField" layoutX="20.0" layoutY="10.0"
-					onAction="#handleSearch"
-					promptText="Search" AnchorPane.leftAnchor="0.0"
-					AnchorPane.rightAnchor="0.0" HBox.hgrow="ALWAYS">
+				<TextField fx:id="searchField" onAction="#handleSearch" promptText="Search" HBox.hgrow="ALWAYS">
 					<HBox.margin>
 						<Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
 					</HBox.margin>
@@ -102,35 +94,37 @@
 					</padding>
 				</TextField>
 
-			</children>
+				<ImageView fitHeight="20.0" fitWidth="20.0" onMouseClicked="#handleSearchCrossClicked" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER_RIGHT">
+					<image>
+						<Image url="@../../resources/spritesheet.png" />
+					</image>
+               <effect>
+                  <InnerShadow choke="1.0" color="#00000045" height="255.0" radius="127.0" width="255.0" />
+               </effect>
+               <StackPane.margin>
+                  <Insets right="7.0" />
+               </StackPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+				</ImageView>
+
 			<padding>
 				<Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
 			</padding>
-		</AnchorPane>
+
+		</StackPane>
+		
+        <TabPane fx:id="tabPane" prefHeight="35.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="40.0" tabMaxWidth="120.0" tabMinHeight="30.0" tabMinWidth="100.0" VBox.vgrow="NEVER" />
 
 		<StackPane fx:id="tableStack" VBox.vgrow="ALWAYS">
-			<children>
 
-				<VBox fx:id="workingTreeLayout" visible="true" VBox.vgrow="ALWAYS">
+				<VBox fx:id="workingTreeLayout" VBox.vgrow="ALWAYS">
 					<children>
 
-						<TreeTableView fx:id="workingTreeL__Table"
-							prefHeight="100.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0"
-							AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
-							AnchorPane.topAnchor="0.0" VBox.vgrow="ALWAYS">
-							<columnResizePolicy>
-								<TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
-							</columnResizePolicy>
-							<columns>
-								<TreeTableColumn fx:id="workingTreeT__fileColumn"
-									editable="false" minWidth="450.0" prefWidth="450.0" text="File" />
-								<TreeTableColumn fx:id="workingTreeT__sizeColumn"
-									maxWidth="250.0" minWidth="150.0" prefWidth="150.0" text="Size" />
-							</columns>
-						</TreeTableView>
+						<TreeTableView fx:id="workingTreeL__TreeTable" VBox.vgrow="ALWAYS"/>
 
-						<Label fx:id="workingTreeL__statusBar"
-							text="You have 10 MB quota for downloading untill 20.03.2017">
+						<Label fx:id="workingTreeL__statusBar" text="You have 10 MB quota for downloading untill 20.03.2017">
 							<VBox.margin>
 								<Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
 							</VBox.margin>
@@ -139,32 +133,13 @@
 					</children>
 				</VBox>
 
-				<VBox fx:id="searchResultsLayout" prefHeight="200.0" prefWidth="100.0"
-					visible="false">
-					<children>
+				<VBox fx:id="searchResultsLayout" visible="false">
 
-						<TableView fx:id="searchL__resultTable" prefHeight="355.0"
-							prefWidth="808.0" VBox.vgrow="ALWAYS">
-							<columns>
-								<TableColumn fx:id="searchT__fileColumn" editable="false"
-									minWidth="450.0" prefWidth="450.0" text="File" />
-								<TableColumn fx:id="searchT__sizeColumn" editable="false"
-									maxWidth="250.0" minWidth="150.0" prefWidth="150.0" text="Size" />
-							</columns>
+						<TableView fx:id="searchL__resultTable" VBox.vgrow="ALWAYS"/>
+						<Pagination fx:id="searchL__pagination" maxPageIndicatorCount="3" pageCount="5" prefHeight="40.0" />
 
-							<columnResizePolicy>
-								<TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
-							</columnResizePolicy>
-
-						</TableView>
-						<Pagination fx:id="searchL__paginator"
-							maxPageIndicatorCount="5" pageCount="10" prefHeight="39.0"
-							prefWidth="600.0" />
-
-					</children>
 				</VBox>
 
-			</children>
 		</StackPane>
 
 	</children>

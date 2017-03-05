@@ -1,41 +1,24 @@
-package com.ilya.ivanov.catty_cathalog.controller;
+package com.ilya.ivanov.catty_catalog.controller;
 
 
-import java.sql.SQLException;
-
-//import java.sql.Date;
-
-import com.ilya.ivanov.catty_cathalog.model._enum.UserType;
-import com.ilya.ivanov.catty_cathalog.model.implementation.DAODatabase;
-
+import com.ilya.ivanov.catty_catalog.model.Model;
+import com.ilya.ivanov.catty_catalog.model.user.Guest;
+import com.ilya.ivanov.catty_catalog.view.stages.StageDriver;
 import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.input.MouseEvent;
-import javafx.stage.Stage;
 
 public class LoginSceneController {
-	@FXML
-	private javafx.scene.text.Text warningText;
-	@FXML
-	private javafx.scene.control.PasswordField passwordField;
-	@FXML
-	private javafx.scene.control.TextField loginField;
+	@FXML private javafx.scene.text.Text warningText;
+	@FXML private javafx.scene.control.PasswordField passwordField;
+	@FXML private javafx.scene.control.TextField loginField;
 	@FXML Button submitButton;
-	
-	public static DAODatabase dao = new DAODatabase();
 
-	@FXML
-	public void handleSubmitButtonAction(ActionEvent event) {
-		// Date date = Date.valueOf("");
-		if (dao.signIn(loginField.getText(), passwordField.getText())) {
-			
+	@FXML public void handleSubmitButtonAction() {
+		// Validator
+        Model.user = DataController.dao.signIn(loginField.getText(), passwordField.getText());
+		if (Model.user != null) {
+            StageDriver.setStage("main");
 		}
 		else {
 			warningText.setVisible(true);
@@ -43,61 +26,30 @@ public class LoginSceneController {
 		}
 	}
 
-	@FXML public void handleSignInAsGuest(MouseEvent event) {
-		changeSceneToMain((Stage) ((Node) event.getSource()).getScene().getWindow());
+	@FXML public void handleSignInAsGuest() {
+        Model.user = new Guest();
+        StageDriver.setStage("main");
 	}
 	
-	@FXML
-	public void initialize() {
-		ChangeListener<Number> listner = new ChangeListener<Number>() {
-
-			@Override
-			public void changed(ObservableValue<? extends Number> arg0, Number oldVal, Number newVal) {
-				submitButton.setDisable(
-						loginField.getText().isEmpty() ||
-						passwordField.getText().isEmpty());
-			}
-		};
-		loginField.lengthProperty().addListener(listner);
-		passwordField.lengthProperty().addListener(listner);
-		
-		try {
-			dao.connect();
-		} catch (SQLException e) {
-			// error window
-			// terminate or try again
-			
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	@FXML public void initialize() {
+	    // disable submit button if one of the fields is empty
+		ChangeListener<Number> listener = (arg0, oldVal, newVal) -> submitButton.setDisable(
+                loginField.getText().isEmpty() ||
+                passwordField.getText().isEmpty());
+        // add this listener to both buttons
+		loginField.lengthProperty().addListener(listener);
+		passwordField.lengthProperty().addListener(listener);
 	}
 
 	@FXML public void handleLoginChanged() {
 		warningText.setVisible(false);
 	}
 
-	@FXML public void handlePasswordChenged() {
+	@FXML public void handlePasswordChanged() {
 		warningText.setVisible(false);
 	}
-	
-	private void changeSceneToMain(Stage primaryStage) {
-		try {
-			Parent mainRoot = FXMLLoader.load(getClass().getResource("../view/fxml/main_scene.fxml"));
-			primaryStage.setTitle("Catty");
 
-			primaryStage.setMinWidth(600);
-			primaryStage.setMinHeight(400);
-			primaryStage.setResizable(true);
-
-			primaryStage.setScene(new Scene(mainRoot));
-			primaryStage.show();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-	@FXML public void handlePasswordFieldAction(ActionEvent event) {
-		submitButton.requestFocus();
-		handleSubmitButtonAction(event);
+	@FXML public void handlePasswordFieldAction() {
+		handleSubmitButtonAction();
 	}
 }
