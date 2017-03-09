@@ -3,7 +3,6 @@ package com.ilya.ivanov.catty_catalog.view.chooser;
 import com.ilya.ivanov.catty_catalog.model.Model;
 import com.ilya.ivanov.catty_catalog.view.stages.StageDriver;
 import javafx.stage.FileChooser;
-import javafx.stage.Stage;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -14,7 +13,7 @@ import java.util.List;
 /**
  * Created by Илья on 05.03.2017.
  */
-public class FileChooserPopup {
+public class FileChooserModal {
     private static final HashMap<String, FileChooser.ExtensionFilter> extensionsMap = new HashMap<>();
 
     static {

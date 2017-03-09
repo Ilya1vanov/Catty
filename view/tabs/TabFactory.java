@@ -1,5 +1,6 @@
 package com.ilya.ivanov.catty_catalog.view.tabs;
 
+import com.ilya.ivanov.catty_catalog.resources.Recource;
 import javafx.scene.control.Tab;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -16,7 +17,7 @@ public class TabFactory {
         ImageView imageView = new ImageView();
         imageView.setFitWidth(25);
         imageView.setFitHeight(25);
-        imageView.setImage(new Image(TabFactory.class.getResourceAsStream("../../resources/" + name + "-icon.png")));
+        imageView.setImage(new Image(Recource.class.getResourceAsStream(name + "-icon.png")));
         tab.setGraphic(imageView);
         return tab;
     }

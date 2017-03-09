@@ -13,19 +13,21 @@ import javafx.scene.control.TreeItem;
  * @param <StoredObject> class that represents object to store
  * @param <UserObject> class that represents user of storage
  */
-public interface TreeDAO<StoredObject, UserObject> {
+public interface DAO<StoredObject, UserObject> {
 	/**
-	 * Connect to the storage with the given url
+	 * Connect to the storage with the given url.
+	 * May be not overridden if storage is local.
      * @param url a database url
 	 * @throws Exception to provide more information about error
      */
-	void connect(String url) throws Exception;
+	default void connect(String url) throws Exception {}
 
     /**
-     * Disconnect form the storage
+     * Disconnect form the storage.
+     * May be not overridden if storage is local.
      * @throws Exception to provide more information about error
      */
-	void disconnect() throws Exception;
+	default void disconnect() throws Exception {}
 
 	/**
 	 * Verify user with given login and password to access storage

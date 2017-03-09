@@ -6,10 +6,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Pagination?>
 <?import javafx.scene.control.TabPane?>
-<?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.TreeTableColumn?>
 <?import javafx.scene.control.TreeTableView?>
 <?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.image.Image?>
@@ -22,37 +20,33 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox maxWidth="800.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ilya.ivanov.catty_catalog.controller.MainSceneController">
-	<children>
+<VBox stylesheets="@../css/mainScene.css" xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ilya.ivanov.catty_catalog.controller.MainStageController">
 
 		<AnchorPane prefHeight="45.0" prefWidth="600.0" VBox.vgrow="NEVER">
-			<children>
-
 				<HBox fx:id="controlButtons" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="460.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="0.0">
-					<children>
+
 						<Button fx:id="addButton" onAction="#handleAddButtonAction" text="Add" />
-						<Button fx:id="deleteButton" onAction="#handleDeleteButtonAction" text="Delete" />
-					</children>
+						<Button fx:id="removeButton" onAction="#handleRemoveButtonAction" text="Remove" />
+
 					<padding>
 						<Insets bottom="5.0" left="20.0" right="5.0" top="5.0" />
 					</padding>
 				</HBox>
 
 				<HBox alignment="CENTER_RIGHT" prefHeight="55.0" prefWidth="150.0" spacing="7.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-					<children>
+
 						<StackPane prefHeight="35.0" prefWidth="26.0">
-							<children>
+
 								<Circle fill="#b1baff" radius="16.0" />
 								<Text fx:id="userNameLetter" fill="#4c18dd" text="G" translateX="-1" translateY="-1">
 									<font>
 										<Font name="FreeSerif Bold" size="24.0" />
 									</font>
 								</Text>
-							</children>
+
 						</StackPane>
 
 						<AnchorPane onMouseClicked="#handleSignOut">
-							<children>
 
 								<Label layoutX="25.0" layoutY="5.0" text="Sign Out" underline="true" />
 
@@ -65,7 +59,7 @@
 									</effect>
 								</ImageView>
 
-							</children>
+
 							<cursor>
 								<Cursor fx:constant="HAND" />
 							</cursor>
@@ -74,17 +68,14 @@
 							</HBox.margin>
 						</AnchorPane>
 
-					</children>
+
 					<padding>
 						<Insets bottom="10.0" right="20.0" top="10.0" />
 					</padding>
 				</HBox>
-
-			</children>
 		</AnchorPane>
 
 		<StackPane alignment="CENTER_RIGHT" VBox.vgrow="NEVER">
-
 				<TextField fx:id="searchField" onAction="#handleSearch" promptText="Search" HBox.hgrow="ALWAYS">
 					<HBox.margin>
 						<Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
@@ -112,17 +103,18 @@
 			<padding>
 				<Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
 			</padding>
-
 		</StackPane>
 		
         <TabPane fx:id="tabPane" prefHeight="35.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="40.0" tabMaxWidth="120.0" tabMinHeight="30.0" tabMinWidth="100.0" VBox.vgrow="NEVER" />
 
 		<StackPane fx:id="tableStack" VBox.vgrow="ALWAYS">
-
 				<VBox fx:id="workingTreeLayout" VBox.vgrow="ALWAYS">
-					<children>
 
-						<TreeTableView fx:id="workingTreeL__TreeTable" VBox.vgrow="ALWAYS"/>
+						<TreeTableView id="workingTreeTable" fx:id="workingTreeL__TreeTable" VBox.vgrow="ALWAYS" >
+							<columnResizePolicy>
+                                <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+                            </columnResizePolicy>
+						</TreeTableView>
 
 						<Label fx:id="workingTreeL__statusBar" text="You have 10 MB quota for downloading untill 20.03.2017">
 							<VBox.margin>
@@ -130,17 +122,19 @@
 							</VBox.margin>
 						</Label>
 
-					</children>
 				</VBox>
 
 				<VBox fx:id="searchResultsLayout" visible="false">
 
-						<TableView fx:id="searchL__resultTable" VBox.vgrow="ALWAYS"/>
+						<TableView id="serachTable" fx:id="searchL__resultTable" VBox.vgrow="ALWAYS" >
+                            <columnResizePolicy>
+                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+                            </columnResizePolicy>
+                        </TableView>
 						<Pagination fx:id="searchL__pagination" maxPageIndicatorCount="3" pageCount="5" prefHeight="40.0" />
 
 				</VBox>
-
 		</StackPane>
 
-	</children>
+
 </VBox>

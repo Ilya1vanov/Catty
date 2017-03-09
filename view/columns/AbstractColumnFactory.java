@@ -7,7 +7,7 @@ import javafx.scene.text.TextAlignment;
  * Created by Илья on 04.03.2017.
  */
 public abstract class AbstractColumnFactory {
-    public final TableColumnBase getColumn(String name, ColumnModel model) {
+    public final TableColumnBase getColumn(String name, Columns.ColumnModel model) {
         TableColumnBase column = createColumn(name);
         column.setId(name + "Col");
 //        setAlignment(column, model.getTextAlignment());

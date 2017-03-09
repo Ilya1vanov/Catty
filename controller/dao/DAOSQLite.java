@@ -10,7 +10,7 @@ import javafx.scene.control.TreeItem;
 import java.sql.*;
 import java.util.List;
 
-public class DAOSQLite implements TreeDAO<AbstractFileObject, AbstractUser> {
+public class DAOSQLite implements DAO<AbstractFileObject, AbstractUser> {
 	private static Connection connection;
 	private static Statement statement;
 	private static ResultSet resultSet;
@@ -45,7 +45,7 @@ public class DAOSQLite implements TreeDAO<AbstractFileObject, AbstractUser> {
 //				Model.user.setName(login);
 //				//
 //				resultSet.getString("type");
-//				//MainSceneController.user.setType();
+//				//MainStageController.user.setType();
 //				return true;
 //			}
 //			else

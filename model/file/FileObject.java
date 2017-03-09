@@ -9,8 +9,9 @@ public class FileObject extends AbstractFileObject {
         return parentID;
     }
 
-    public FileObject(File file) {
+    public FileObject(File file, int parentID) {
 		super(file);
+        this.parentID = parentID;
 		// TODO Auto-generated constructor stub
 	}
 

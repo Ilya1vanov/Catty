@@ -8,7 +8,7 @@ import javafx.beans.value.ChangeListener;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
-public class LoginSceneController {
+public class LoginStageController implements StageController {
 	@FXML private javafx.scene.text.Text warningText;
 	@FXML private javafx.scene.control.PasswordField passwordField;
 	@FXML private javafx.scene.control.TextField loginField;
@@ -16,8 +16,8 @@ public class LoginSceneController {
 
 	@FXML public void handleSubmitButtonAction() {
 		// Validator
-        Model.user = DataController.dao.signIn(loginField.getText(), passwordField.getText());
-		if (Model.user != null) {
+        Model.setUser(DataController.dao.signIn(loginField.getText(), passwordField.getText()));
+		if (Model.getUser() != null) {
             StageDriver.setStage("main");
 		}
 		else {
@@ -27,9 +27,17 @@ public class LoginSceneController {
 	}
 
 	@FXML public void handleSignInAsGuest() {
-        Model.user = new Guest();
+        Model.setUser(new Guest());
         StageDriver.setStage("main");
 	}
+
+	@Override
+	public void onStageShown() {
+	    loginField.setText("");
+        passwordField.setText("");
+
+        loginField.requestFocus();
+    }
 	
 	@FXML public void initialize() {
 	    // disable submit button if one of the fields is empty
@@ -47,9 +55,5 @@ public class LoginSceneController {
 
 	@FXML public void handlePasswordChanged() {
 		warningText.setVisible(false);
-	}
-
-	@FXML public void handlePasswordFieldAction() {
-		handleSubmitButtonAction();
 	}
 }
