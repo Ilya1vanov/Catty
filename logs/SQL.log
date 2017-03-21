@@ -1,0 +1,7 @@
+20:25:00,861 DEBUG JavaFX Application Thread DAOSQLite:connect:56 - Connected
+20:25:50,795 DEBUG JavaFX Application Thread DAOSQLite:connect:56 - Connected
+20:25:53,700 DEBUG JavaFX Application Thread DAOSQLite:disconnect:69 - Disconnected
+20:27:47,221 DEBUG JavaFX Application Thread DAOSQLite:connect:56 - Connected
+20:27:48,763 DEBUG JavaFX Application Thread DAOSQLite:disconnect:69 - Disconnected
+20:45:26,959 DEBUG JavaFX Application Thread DAOSQLite:connect:56 - Connected
+20:46:17,774 DEBUG JavaFX Application Thread DAOSQLite:disconnect:69 - Disconnected

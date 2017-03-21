@@ -18,8 +18,8 @@ public class FileChooserModal {
 
     static {
         final ArrayList[] extensions = new ArrayList[]{
-                new ArrayList<>(Arrays.asList("*.pdf", "*.doc", "*.docx", "*.ppt", "*.pptx", "*.rtf")),
-                new ArrayList<>(Arrays.asList("*.txt", "*.ibooks", "*.fb2", "*.epub")),
+                new ArrayList<>(Arrays.asList("*.pdf", "*.doc", "*.docx","*.rtf")),
+                new ArrayList<>(Arrays.asList("*.txt", "*.pdf")),
                 new ArrayList<>(Arrays.asList("*.mp3", "*.flac", "*.wv", "*.wav", "*.wma")),
                 new ArrayList<>(Arrays.asList("*.mp4", "*.mkv", "*.avi", "*.mov", "*.webm"))
         };

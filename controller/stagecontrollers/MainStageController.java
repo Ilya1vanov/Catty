@@ -5,7 +5,6 @@ import com.ilya.ivanov.catty_catalog.model.Model;
 import com.ilya.ivanov.catty_catalog.model.file.AbstractFileObject;
 import com.ilya.ivanov.catty_catalog.model.file.DirectoryObject;
 import com.ilya.ivanov.catty_catalog.model.file.FileObject;
-import com.ilya.ivanov.catty_catalog.model.mail.MailDriver;
 import com.ilya.ivanov.catty_catalog.model.user.AbstractUser;
 import com.ilya.ivanov.catty_catalog.view.chooser.FileChooserModal;
 import com.ilya.ivanov.catty_catalog.view.columns.Columns;
@@ -19,13 +18,12 @@ import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
-import javafx.event.EventHandler;
-import javafx.event.EventType;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.scene.Node;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.*;
@@ -360,7 +358,7 @@ public class MainStageController implements StageController {
 
 	@FXML public void handleSignOut() {
 		try {
-            View.setStage("login");
+            View.hideAllAndShow("login");
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
@@ -572,8 +570,12 @@ public class MainStageController implements StageController {
      *
      * @param source TableRow where context menu was invoked.
      */
-    public void handleOpen(IndexedCell<AbstractFileObject> source) {
+    public void handlePreview(IndexedCell<AbstractFileObject> source) {
         System.out.println(source.getItem());
+        Image image = new Image(DataController.dao.pullFile(source.getItem()));
+        ImageView imageView = new ImageView(image);
+
+        root.getChildren().add(imageView);
     }
 
 	@Override

@@ -35,7 +35,7 @@ public class DAOSQLite implements DAO<AbstractFileObject, AbstractUser> {
     private PreparedStatement pullFile;
 
 	@Override
-	public void connect(String url) {
+	public void connect(String url) throws SQLException {
         try {
             connection = DriverManager.getConnection(JDBC_PREFIX + url);
             statement = connection.createStatement();
@@ -51,18 +51,22 @@ public class DAOSQLite implements DAO<AbstractFileObject, AbstractUser> {
             pullFile = connection.prepareStatement("SELECT data FROM tree WHERE ID = ?");
         } catch (SQLException e) {
             log.fatal("Cannot connect to database!", e);
+            //throw new SQLException(e);
         }
+        log.debug("Connected");
 	}
 
 	@Override
-	public void disconnect() {
+	public void disconnect() throws SQLException {
         try {
             resultSet.close();
             statement.close();
             connection.close();
         } catch (SQLException e) {
             log.fatal("Cannot disconnect from database!", e);
+            throw new SQLException(e);
         }
+        log.debug("Disconnected");
 	}
 
 	@Override
@@ -222,25 +226,18 @@ public class DAOSQLite implements DAO<AbstractFileObject, AbstractUser> {
         return bos != null ? bos.toByteArray() : null;
     }
 
-    public OutputStream pullFile(AbstractFileObject file) {
-        OutputStream outputStream = new ByteArrayOutputStream();
-
+    public InputStream pullFile(AbstractFileObject file) {
+        InputStream data = null;
         try {
             pullFile.setInt(1, file.getID());
             resultSet = pullFile.executeQuery();
 
             if (resultSet.next()) {
-                InputStream data = resultSet.getBinaryStream("data");
-                byte[] buffer = new byte[1024];
-                while (data.read(buffer) > 0) {
-                    outputStream.write(buffer);
-                }
+                data = resultSet.getBinaryStream("data");
             }
         } catch (SQLException e) {
             log.warn("Cannot pull file!", e);
-        } catch (IOException e) {
-            log.error("Error while reading!", e);
         }
-        return outputStream;
+        return data;
     }
 }

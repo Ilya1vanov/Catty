@@ -1,6 +1,5 @@
 package com.ilya.ivanov.catty_catalog.view.context;
 
-import com.ilya.ivanov.catty_catalog.controller.Controller;
 import com.ilya.ivanov.catty_catalog.controller.stagecontrollers.MainStageController;
 import com.ilya.ivanov.catty_catalog.model.Model;
 import com.ilya.ivanov.catty_catalog.model.file.AbstractFileObject;
@@ -45,7 +44,7 @@ public class RowContextMenu extends ContextMenu {
 
         if (controller != null) {
             previewMI.setOnAction(event ->
-                    controller.handleOpen((IndexedCell) ((MenuItem) event.getSource()).getParentPopup().getOwnerNode()));
+                    controller.handlePreview((IndexedCell) ((MenuItem) event.getSource()).getParentPopup().getOwnerNode()));
 
             addDirMI.setOnAction(event ->
                 controller.handleAddDirectory((IndexedCell) ((MenuItem) event.getSource()).getParentPopup().getOwnerNode()));

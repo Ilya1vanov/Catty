@@ -1,6 +1,8 @@
 package com.ilya.ivanov.catty_catalog.controller.dao;
 
+import java.io.InputStream;
 import java.io.OutputStream;
+import java.sql.SQLException;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -22,14 +24,14 @@ public interface DAO<StoredObject, UserObject> {
      * @param url a database url
 	 * @throws Exception to provide more information about error
      */
-	default void connect(String url){}
+	default void connect(String url) throws Exception {}
 
     /**
      * Disconnect form the storage.
      * May be not overridden if storage is local.
      * @throws Exception to provide more information about error
      */
-	default void disconnect(){}
+	default void disconnect() throws Exception {}
 
 	/**
 	 * Verify user with given login and password to access storage
@@ -71,5 +73,5 @@ public interface DAO<StoredObject, UserObject> {
 	 * @param file Object of stored file to pull.
 	 * @return OutputStream that represent stored file.
      */
-	public OutputStream pullFile(StoredObject file);
+	public InputStream pullFile(StoredObject file);
 }

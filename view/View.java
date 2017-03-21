@@ -10,6 +10,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.TreeTableView;
 import javafx.scene.image.Image;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -49,6 +50,14 @@ public class View {
         mainProperties.put("MinHeight", 600.0);
         mainProperties.put("Resizable", true);
         stageProperties.put("main", mainProperties);
+
+        // preview stage
+        HashMap<String, Object> previewProperties = new HashMap<>();
+        previewProperties.put("Title", "Preview");
+        previewProperties.put("MinWidth", 600.0);
+        previewProperties.put("MinHeight", 400.0);
+        previewProperties.put("Resizable", true);
+//        stageProperties.put("preview", previewProperties);
     }
 
     /**
@@ -78,7 +87,7 @@ public class View {
      *                  view/fxml/'name of the stage'_stage.fxml
      * @throws RuntimeException if there are no loaded stage with the given name
      */
-    public static void setStage(@NotNull String stageName) throws RuntimeException {
+    public static void hideAllAndShow(@NotNull String stageName) throws RuntimeException {
         if (currentStage != null)
             stages.get(currentStage).hide();
         Stage newStage = stages.get(stageName);
@@ -90,6 +99,19 @@ public class View {
         // invoke onStageShown if Controller implements StegeController interface
         if (Controller.getController(stageName) instanceof StageController)
             ((StageController) Controller.getController(stageName)).onStageShown();
+    }
+
+    public static void showAsModal(@NotNull String stageName) {
+        Stage stage = stages.get(stageName);
+        if (stage == null)
+            throw new RuntimeException("No such stage: " + stageName);
+
+        if (currentStage != null) {
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.initOwner(getCurrentStage());
+        }
+
+        stage.show();
     }
 
     static {
@@ -108,13 +130,18 @@ public class View {
                     e.printStackTrace();
                 }
 
-                // load scene from view/fxml/'stageName'_stage.fxml
             try {
+                // load scene from view/fxml/'stageName'_stage.fxml
                 FXMLLoader loader = new FXMLLoader();
                 loader.setLocation(Fxml.class.getResource(stageEntry.getKey() + "_stage.fxml"));
                 stage.setScene(new Scene(loader.load()));
+
+                // load and store controller
                 Controller.addController(stageEntry.getKey(), loader.getController());
+
+                // set catty-icon to all stages
                 stage.getIcons().add(new Image(Recource.class.getResourceAsStream("catty-icon.png")));
+
                 stages.put(stageEntry.getKey(), stage);
             } catch (IOException e) {
                 e.printStackTrace();
