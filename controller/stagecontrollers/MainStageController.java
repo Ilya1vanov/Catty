@@ -423,7 +423,8 @@ public class MainStageController implements StageController {
         Optional<String> result = dialog.showAndWait();
 
         if (result.isPresent()) {
-            AbstractFileObject directoryObject = new DirectoryObject(source.getItem().getID(), result.get());
+            AbstractFileObject item = source.getItem();
+            AbstractFileObject directoryObject = new DirectoryObject(item == null ? Model.getCurrentRoot().getValue().getID() : item.getID(), result.get());
             DataController.dao.pushFileObject(directoryObject, null);
 
             // sequential updating

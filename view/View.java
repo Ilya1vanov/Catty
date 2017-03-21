@@ -6,6 +6,8 @@ import com.ilya.ivanov.catty_catalog.model.Model;
 import com.ilya.ivanov.catty_catalog.resources.Recource;
 import com.ilya.ivanov.catty_catalog.view.fxml.Fxml;
 import com.sun.istack.internal.NotNull;
+import com.sun.javafx.stage.StageHelper;
+import com.sun.javafx.stage.StagePeerListener;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.TreeTableView;
@@ -17,6 +19,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Properties;
 
 /**
  * Statically load stages and drive their mapping
@@ -60,6 +63,49 @@ public class View {
 //        stageProperties.put("preview", previewProperties);
     }
 
+    /*
+    Initialize stages and their properties
+     */
+    static {
+        for (Map.Entry<String, HashMap<String, Object>> stageEntry : stageProperties.entrySet()) {
+            Stage stage = new Stage();
+
+            // set stage properties
+            for (Map.Entry<String, Object> property : stageEntry.getValue().entrySet())
+                try {
+                    Arrays.stream(Stage.class.getDeclaredMethods())
+                            .filter(method -> method.getName().equals("set" + property.getKey()))
+                            .findFirst()
+                            .get()
+                            .invoke(stage, property.getValue());
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+            try {
+                // load scene from view/fxml/'stageName'_stage.fxml
+                FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(Fxml.class.getResource(stageEntry.getKey() + "_stage.fxml"));
+                stage.setScene(new Scene(loader.load()));
+
+                // load and store controller
+                Controller.addController(stageEntry.getKey(), loader.getController());
+
+                // set catty-icon to all stages
+                stage.getIcons().add(new Image(Recource.class.getResourceAsStream("catty-icon.png")));
+
+                stages.put(stageEntry.getKey(), stage);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+
+    public static Stage getStage(@NotNull String stageName) {
+        return stages.get(stageName);
+    }
+
     /**
      * Returns currently shown stage.
      * @return Currently shown stage.
@@ -101,6 +147,7 @@ public class View {
             ((StageController) Controller.getController(stageName)).onStageShown();
     }
 
+
     public static void showAsModal(@NotNull String stageName) {
         Stage stage = stages.get(stageName);
         if (stage == null)
@@ -112,44 +159,5 @@ public class View {
         }
 
         stage.show();
-    }
-
-    static {
-        for (Map.Entry<String, HashMap<String, Object>> stageEntry : stageProperties.entrySet()) {
-            Stage stage = new Stage();
-
-            // set stage properties
-            for (Map.Entry<String, Object> property : stageEntry.getValue().entrySet())
-                try {
-                    Arrays.stream(Stage.class.getDeclaredMethods())
-                            .filter(method -> method.getName().equals("set" + property.getKey()))
-                            .findFirst()
-                            .get()
-                            .invoke(stage, property.getValue());
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-
-            try {
-                // load scene from view/fxml/'stageName'_stage.fxml
-                FXMLLoader loader = new FXMLLoader();
-                loader.setLocation(Fxml.class.getResource(stageEntry.getKey() + "_stage.fxml"));
-                stage.setScene(new Scene(loader.load()));
-
-                // load and store controller
-                Controller.addController(stageEntry.getKey(), loader.getController());
-
-                // set catty-icon to all stages
-                stage.getIcons().add(new Image(Recource.class.getResourceAsStream("catty-icon.png")));
-
-                stages.put(stageEntry.getKey(), stage);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    public static Stage getStage(@NotNull String stageName) {
-        return stages.get(stageName);
     }
 }

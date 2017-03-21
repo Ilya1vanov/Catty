@@ -14,6 +14,7 @@ import javafx.beans.property.SimpleObjectProperty;
 import javafx.collections.ObservableList;
 import javafx.collections.ObservableMap;
 import javafx.scene.control.TreeItem;
+import org.apache.log4j.Logger;
 
 import java.util.*;
 
@@ -21,6 +22,8 @@ import java.util.*;
  * Created by ivano on 02.03.2017.
  */
 public class Model {
+    private static Logger log = Logger.getLogger(Model.class);
+
     private static final ObjectProperty<AbstractUser> user = new SimpleObjectProperty<>();
 
     private static String currentRoot;
@@ -71,11 +74,10 @@ public class Model {
 
         rootMap = new ObservableMapWrapper<>(hashMap);
 
-        // debug
         rootMap.addListener(new InvalidationListener() {
             @Override
             public void invalidated(javafx.beans.Observable observable) {
-                System.out.println("RootMap invalid! Updating...");
+                log.info("RootMap invalid! Updating...");
             }
         });
     }

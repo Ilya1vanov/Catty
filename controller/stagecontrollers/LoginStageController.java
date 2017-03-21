@@ -31,8 +31,8 @@ public class LoginStageController implements StageController {
     private static Validator validator;
 
 	@FXML public void handleSubmitButtonAction() {
-        validator.validate(this);
-        validator.validateProperty(loginField, "text");
+//        validator.validate(this);
+//        validator.validateProperty(loginField, "text");
 
         Model.setUser(DataController.dao.signIn(loginField.getText(), passwordField.getText()));
 		if (Model.getUser() != null) {
@@ -58,11 +58,11 @@ public class LoginStageController implements StageController {
     }
 	
 	@FXML public void initialize() {
-        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
-        validator = factory.getValidator();
-
-	    log.bind(loginField.textProperty());
-        pass = passwordField.textProperty();
+//        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
+//        validator = factory.getValidator();
+//
+//	    log.bind(loginField.textProperty());
+//        pass = passwordField.textProperty();
 
 	    // disable submit button if one of the fields is empty
 		submitButton.disableProperty().bind(Bindings.or(loginField.textProperty().isEmpty(), passwordField.textProperty().isEmpty()));
