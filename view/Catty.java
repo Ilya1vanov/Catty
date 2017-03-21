@@ -1,23 +1,50 @@
 package com.ilya.ivanov.catty_catalog.view;
 
-import java.io.File;
 import java.io.IOException;
-import java.util.*;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Timer;
+import java.util.TimerTask;
+import java.util.concurrent.TimeUnit;
 
+import com.ilya.ivanov.catty_catalog.controller.DataController;
 import com.ilya.ivanov.catty_catalog.model.Model;
-import com.ilya.ivanov.catty_catalog.view.stages.StageDriver;
+import com.ilya.ivanov.catty_catalog.model.user.AbstractUser;
+import com.ilya.ivanov.catty_catalog.resources.Recource;
 import javafx.application.Application;
-import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 public class Catty extends Application {
-    public static View view = new View();
-    public static Model model = new Model();
+	static Timer timer = new Timer();
 
+//    static {
+//        // reset user's quota every midnight
+//        Calendar today = Calendar.getInstance();
+//        today.set(Calendar.HOUR_OF_DAY, 0);
+//        today.set(Calendar.MINUTE, 0);
+//        today.set(Calendar.SECOND, 0);
+//
+//        timer.schedule(new TimerTask() {
+//            @Override
+//            public void run() {
+//				AbstractUser user = Model.getUser();
+//				if (user != null)
+//					user.resetQuota();
+//            }
+//        }, today.getTime(), TimeUnit.MILLISECONDS.convert(1, TimeUnit.DAYS));
+//    }
 
 	@Override
-	public void start(Stage primaryStage) throws IOException {
-        StageDriver.setStage("login");
+    public void stop() throws Exception {
+        DataController.dao.disconnect();
+    }
+
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		DataController.dao.connect("src/com/ilya/ivanov/catty_catalog/resources/db");
+
+        View.setStage("login");
 	}
 
 	public static void main(String[] args) {

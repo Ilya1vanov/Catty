@@ -1,8 +1,8 @@
 package com.ilya.ivanov.catty_catalog.view.columns;
 
-import javafx.scene.control.TableColumnBase;
-import javafx.scene.control.TreeTableCell;
-import javafx.scene.control.TreeTableColumn;
+import com.ilya.ivanov.catty_catalog.model.file.AbstractFileObject;
+import javafx.geometry.Pos;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.TreeItemPropertyValueFactory;
 import javafx.scene.text.TextAlignment;
 import javafx.util.Callback;
@@ -19,11 +19,18 @@ public class TreeTableColumnFactory<S, T> extends AbstractColumnFactory {
     }
 
     @Override
-    protected void setAlignment(TableColumnBase column, TextAlignment alignment) {
+    protected void setAlignment(TableColumnBase column, Pos alignment) {
         ((TreeTableColumn) column).setCellFactory(param -> {
-            TreeTableCell<S, T> cell = new TreeTableCell();
-            cell.setTextAlignment(alignment);
-            return cell;
+            TreeTableCell<AbstractFileObject, String> tc = new TreeTableCell<AbstractFileObject, String>(){
+                @Override
+                public void updateItem(String item, boolean empty) {
+                    setText(item);
+                    if (empty)
+                        setText(null);
+                }
+            };
+            tc.setAlignment(alignment);
+            return tc;
         });
     }
 }

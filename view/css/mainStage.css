@@ -1,0 +1,7 @@
+#themeTrigger:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(255,0,0,0.7), 14, 0, 0, 0);
+}
+
+/*#searchL__resultTable .table-column {*/
+    /*-fx-alignment: CENTER-RIGHT;*/
+/*}*/

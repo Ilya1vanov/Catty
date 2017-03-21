@@ -15,8 +15,8 @@ public class TabFactory {
         tab.setText(name.substring(0, 1).toUpperCase() + name.substring(1));
         tab.setId(name);
         ImageView imageView = new ImageView();
-        imageView.setFitWidth(25);
-        imageView.setFitHeight(25);
+        imageView.setFitWidth(22);
+        imageView.setFitHeight(22);
         imageView.setImage(new Image(Recource.class.getResourceAsStream(name + "-icon.png")));
         tab.setGraphic(imageView);
         return tab;

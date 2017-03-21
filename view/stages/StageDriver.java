@@ -1,13 +1,15 @@
 package com.ilya.ivanov.catty_catalog.view.stages;
 
-import com.ilya.ivanov.catty_catalog.controller.StageController;
+import com.ilya.ivanov.catty_catalog.controller.stagecontrollers.StageController;
 import com.ilya.ivanov.catty_catalog.resources.Recource;
 import com.ilya.ivanov.catty_catalog.view.fxml.Fxml;
 import com.sun.istack.internal.NotNull;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -75,9 +77,17 @@ public class StageDriver {
         loginProperties.put("Resizable", false);
         stageProperties.put("login", loginProperties);
 
+//        Stage stage = new Stage();
+//        stage.setOnShown(new EventHandler<WindowEvent>() {
+//            @Override
+//            public void handle(WindowEvent event) {
+//
+//            }
+//        });
+
         // main stage
         HashMap<String, Object> mainProperties = new HashMap<>();
-        mainProperties.put("Title", "Catty");
+        mainProperties.put("Title", "View");
         mainProperties.put("MinWidth", 800.0);
         mainProperties.put("MinHeight", 600.0);
         mainProperties.put("Resizable", true);

@@ -10,13 +10,4 @@ import com.ilya.ivanov.catty_catalog.model.user.AbstractUser;
  */
 public class DataController {
     public static DAO<AbstractFileObject, AbstractUser> dao = new DAOSQLite();
-
-    static {
-        try {
-            dao.connect("jdbc:sqlite:src/com/ilya/ivanov/catty_catalog/resources/db");
-        } catch (Exception e) {
-            // say something
-            e.printStackTrace();
-        }
-    }
 }

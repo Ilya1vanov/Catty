@@ -8,4 +8,7 @@ public class Guest extends AbstractUser {
     public Guest() {
         super(0, UserType.guest, "Guest", 0);
     }
+
+    @Override
+    public void subtractQuota(long fileSize) {}
 }

@@ -1,6 +1,7 @@
 package com.ilya.ivanov.catty_catalog.view.columns;
 
-import javafx.scene.text.TextAlignment;
+
+import javafx.geometry.Pos;
 
 import java.util.LinkedHashMap;
 
@@ -12,8 +13,8 @@ public class Columns {
 
     static {
         columnsMap = new LinkedHashMap<>();
-        final String[] columnNames = {"filename", "path", "size"};
-        final ColumnModel[] models = {ColumnModel.WIDE, ColumnModel.MEDIUM, ColumnModel.TINY};
+        final String[] columnNames = {"name", "owner", "size", "uploaded"};
+        final ColumnModel[] models = {ColumnModel.WIDE, ColumnModel.MEDIUM, ColumnModel.TINY, ColumnModel.TINY};
 
         for (int i = 0; i < columnNames.length; ++i)
             columnsMap.put(columnNames[i], models[i]);
@@ -23,18 +24,18 @@ public class Columns {
      * Created by Илья on 04.03.2017.
      */
     public enum ColumnModel {
-        TINY(150.0, 150.0, 250.0, TextAlignment.CENTER), MEDIUM(300.0, 350.0, 550.0, TextAlignment.LEFT), WIDE(500.0, 550.0, 5000.0, TextAlignment.LEFT);
+        TINY(100.0, 100.0, 100.0, Pos.CENTER), MEDIUM(300.0, 350.0, 550.0, Pos.CENTER_LEFT), WIDE(500.0, 550.0, 5000.0, Pos.CENTER_LEFT);
 
         protected double minWidth;
         protected double prefWidth;
         protected double maxWidth;
-        protected TextAlignment textAlignment;
+        protected Pos alignment;
 
-        ColumnModel(double minWidth, double prefWidth, double maxWidth, TextAlignment alignment) {
+        ColumnModel(double minWidth, double prefWidth, double maxWidth, Pos alignment) {
             this.minWidth = minWidth;
             this.prefWidth = prefWidth;
             this.maxWidth = maxWidth;
-            this.textAlignment = alignment;
+            this.alignment = alignment;
         }
 
         public double getMinWidth() {
@@ -49,8 +50,8 @@ public class Columns {
             return maxWidth;
         }
 
-        public TextAlignment getTextAlignment() {
-            return textAlignment;
+        public Pos getAlignment() {
+            return alignment;
         }
     }
 }

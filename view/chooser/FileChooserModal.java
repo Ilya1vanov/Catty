@@ -1,7 +1,7 @@
 package com.ilya.ivanov.catty_catalog.view.chooser;
 
 import com.ilya.ivanov.catty_catalog.model.Model;
-import com.ilya.ivanov.catty_catalog.view.stages.StageDriver;
+import com.ilya.ivanov.catty_catalog.view.View;
 import javafx.stage.FileChooser;
 
 import java.io.File;
@@ -28,12 +28,13 @@ public class FileChooserModal {
                     Model.fileCategories[i].substring(0, 1).toUpperCase() + Model.fileCategories[i].substring(1),
                     extensions[i]));
         }
+        extensionsMap.put("all", new FileChooser.ExtensionFilter("All files", "*.*"));
     }
 
     public static List<File> callFileChooser(String category) {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Select files");
         fileChooser.getExtensionFilters().addAll(extensionsMap.get(category));
-        return fileChooser.showOpenMultipleDialog(StageDriver.getCurrentStage());
+        return fileChooser.showOpenMultipleDialog(View.getCurrentStage());
     }
 }

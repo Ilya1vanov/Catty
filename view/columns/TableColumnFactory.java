@@ -1,5 +1,7 @@
 package com.ilya.ivanov.catty_catalog.view.columns;
 
+import com.ilya.ivanov.catty_catalog.model.file.AbstractFileObject;
+import javafx.geometry.Pos;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.text.TextAlignment;
@@ -16,12 +18,18 @@ public class TableColumnFactory<S, T> extends AbstractColumnFactory {
     }
 
     @Override
-    protected void setAlignment(TableColumnBase column, TextAlignment alignment) {
+    protected void setAlignment(TableColumnBase column, Pos alignment) {
         ((TableColumn)column).setCellFactory(param -> {
-            TableCell<S, T> cell = new TableCell();
-
-            cell.setTextAlignment(alignment);
-            return cell;
+            TableCell<AbstractFileObject, String> tc = new TableCell<AbstractFileObject, String>(){
+                @Override
+                public void updateItem(String item, boolean empty) {
+                    setText(item);
+                    if (empty)
+                        setText(null);
+                }
+            };
+            tc.setAlignment(alignment);
+            return tc;
         });
     }
 }
