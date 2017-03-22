@@ -1,0 +1,1736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7925fde3-fcdd-40b1-ae8f-fdce8ede2145" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_javax_el_3_0_1_b08.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_4_1_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/javax_validation_validation_api_1_1_0_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/log4j_log4j_1_2_17.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_xerial_sqlite_jdbc_3_16_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/controller/stagecontrollers/LoginStageController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Catty.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/Controller.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/DataController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/dao/DAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/dao/DAOSQLite.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/stagecontrollers/LoginStageController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/stagecontrollers/MainStageController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/stagecontrollers/StageController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/SQL.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model/Model.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model/file/AbstractFileObject.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model/file/AbstractFileObjectFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model/file/DirectoryObject.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model/file/FileObject.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model/mail/MailDriver.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model/user/AbstractUser.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model/user/AbstractUserFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model/user/Admin.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model/user/Guest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model/user/User.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model/user/UserType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model/validator/IValidator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/Recource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/audios-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/books-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/catty-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/documents-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/palette-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sign-out-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/spritesheet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/videos-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/View.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/chooser/FileChooserModal.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/columns/AbstractColumnFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/columns/Columns.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/columns/TableColumnFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/columns/TreeTableColumnFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/context/RowContextMenu.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/CSS.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/blackOnWhite.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/caspian-no-transparency.bss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/caspian-no-transparency.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/caspian.bss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/caspian.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/center-btn-selected.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/center-btn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/dialog-confirm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/dialog-confirm@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/dialog-error.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/dialog-error@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/dialog-fewer-details.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/dialog-fewer-details@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/dialog-information.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/dialog-information@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/dialog-more-details.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/dialog-more-details@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/dialog-warning.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/dialog-warning@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/embedded-qvga.bss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/embedded-qvga.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/embedded.bss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/embedded.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/fxvk-backspace-button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/fxvk-capslock-button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/fxvk-enter-button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/fxvk-shift-button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/fxvk.bss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/fxvk.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/highcontrast.bss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/highcontrast.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/images/backspace-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/images/capslock-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/images/enter-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/images/shift-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/images/vk-dark-pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/images/vk-dark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/images/vk-hide.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/images/vk-light-pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/images/vk-light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/images/vk-medium-pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/images/vk-medium.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/left-btn-selected.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/left-btn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/menu-shadow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/pattern-transparent.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/right-btn-selected.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/right-btn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/two-level-focus.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/highcontrast.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/macOS.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/mainScene.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/mainStage.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Background-Color-Black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Background-Color-Black@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Background-Color-White.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Background-Color-White@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Background-Color-Yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Background-Color-Yellow@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Background-Color.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Background-Color@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bold-Black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bold-Black@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bold-White.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bold-White@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bold-Yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bold-Yellow@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bold.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bold@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Break-Black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Break-Black@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Break-White.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Break-White@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Break-Yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Break-Yellow@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Break.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Break@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets-Black-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets-Black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets-Black@2x-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets-Black@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets-White-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets-White.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets-White@2x-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets-White@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets-Yellow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets-Yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets-Yellow@2x-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets-Yellow@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets@2x-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Center-Black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Center-Black@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Center-White.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Center-White@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Center-Yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Center-Yellow@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Center.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Center@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Copy-Black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Copy-Black@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Copy-White.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Copy-White@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Copy-Yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Copy-Yellow@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Copy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Copy@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Cut-Black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Cut-Black@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Cut-White.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Cut-White@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Cut-Yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Cut-Yellow@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Cut.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Cut@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent-Black-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent-Black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent-Black@2x-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent-Black@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent-White-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent-White.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent-White@2x-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent-White@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent-Yellow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent-Yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent-Yellow@2x-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent-Yellow@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent@2x-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Italic-Black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Italic-Black@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Italic-White.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Italic-White@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Italic-Yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Italic-Yellow@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Italic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Italic@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Justify-Black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Justify-Black@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Justify-White.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Justify-White@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Justify-Yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Justify-Yellow@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Justify.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Justify@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Left-Black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Left-Black@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Left-White.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Left-White@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Left-Yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Left-Yellow@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Left@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered-Black-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered-Black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered-Black@2x-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered-Black@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered-White-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered-White.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered-White@2x-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered-White@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered-Yellow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered-Yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered-Yellow@2x-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered-Yellow@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered@2x-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent-Black-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent-Black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent-Black@2x-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent-Black@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent-White-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent-White.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent-White@2x-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent-White@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent-Yellow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent-Yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent-Yellow@2x-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent-Yellow@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent@2x-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Paste-Black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Paste-Black@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Paste-White.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Paste-White@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Paste-Yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Paste-Yellow@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Paste.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Paste@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Right-Black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Right-Black@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Right-White.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Right-White@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Right-Yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Right-Yellow@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Right@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Strikethrough-Black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Strikethrough-Black@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Strikethrough-White.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Strikethrough-White@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Strikethrough-Yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Strikethrough-Yellow@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Strikethrough.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Strikethrough@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Text-Color-Black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Text-Color-Black@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Text-Color-White.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Text-Color-White@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Text-Color-Yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Text-Color-Yellow@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Text-Color.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Text-Color@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Underline-Black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Underline-Black@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Underline-White.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Underline-White@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Underline-Yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Underline-Yellow@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Underline.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Underline@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/blackOnWhite.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/dialog-confirm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/dialog-confirm@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/dialog-error.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/dialog-error@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/dialog-fewer-details.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/dialog-fewer-details@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/dialog-information.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/dialog-information@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/dialog-more-details.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/dialog-more-details@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/dialog-warning.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/dialog-warning@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/modena-embedded-performance.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/modena-no-transparency.bss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/modena-no-transparency.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/modena.bss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/modena.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/pattern-transparent.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/touch.bss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/touch.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/two-level-focus.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/whiteOnBlack.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/yellowOnBlack.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modenaDark.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/win7glass.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/fxml/Fxml.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/fxml/login_stage.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/fxml/main_stage.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/tabs/TabFactory.java" afterPath="" />
+    </list>
+    <ignored path="catty.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="catty" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginStageController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/stagecontrollers/LoginStageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="69" selection-end-column="44" />
+              <folding>
+                <element signature="initializer##0;class#LoginStageController#0" expanded="false" />
+                <element signature="method#handleSignInAsGuest#0;class#LoginStageController#0" expanded="false" />
+                <element signature="method#onStageShown#0;class#LoginStageController#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/controller/dao/DAOSQLite.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Catty.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/dao/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/view/css/CSS.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/main_stage.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/login_stage.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/view/View.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/tabs/TabFactory.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/stagecontrollers/LoginStageController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="473" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="472" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="473" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="472" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="256" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="238" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="335" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1061" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\Dropbox\ВМСИС\4-й семестр\КПП\epam\catty\src\main\resources" />
+      <recent name="H:\Dropbox\ВМСИС\4-й семестр\КПП\epam\catty\src\main\java" />
+      <recent name="H:\Dropbox\ВМСИС\4-й семестр\КПП\epam\catty\src\main\java\controller\dao" />
+      <recent name="H:\Dropbox\ВМСИС\4-й семестр\КПП\epam\catty\lib" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Catty">
+    <configuration default="false" name="Catty" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Catty" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="catty" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="GAPID_DISABLE_PCS" value="false" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method>
+        <option name="Make" enabled="true" />
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="GAPID_DISABLE_PCS" value="false" />
+      </Profilers>
+      <method>
+        <option name="Make" enabled="true" />
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
+      <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
+      <module name="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*.feature" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="VERBOSE_OPTION" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JRubyCucumberRunConfigurationType" factoryName="JRuby Cucumber">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-Dforce.jruby.jit=true -Djruby.debug.fullTrace=true" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*.feature" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="VERBOSE_OPTION" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="catty" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Application.Catty" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.Catty" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6063000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21145834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27589852" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="92" y="588" width="595" height="360" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Bugs amended. Project restarted with Maven." />
+    <option name="LAST_COMMIT_MESSAGE" value="Bugs amended. Project restarted with Maven." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="20" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/file/DirectoryObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/file/FileObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/file/AbstractFileObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/mail/MailDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/user/AbstractUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/user/AbstractUserFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/user/Admin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/user/Guest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/user/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/user/UserType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/columns/AbstractColumnFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/context/RowContextMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/fxml/Fxml.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Recource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/columns/TableColumnFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/columns/TreeTableColumnFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/stagecontrollers/MainStageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="e#5896#6212#0" expanded="false" />
+            <element signature="e#6211#6212#0" expanded="false" />
+            <element signature="e#10047#10281#0" expanded="false" />
+            <element signature="e#10280#10281#0" expanded="false" />
+            <element signature="e#22502#22503#0" expanded="false" />
+            <element signature="e#22553#22554#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/AbstractStringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding>
+            <element signature="e#1369#1370#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/log4j-1.2.17-sources.jar!/org/apache/log4j/spi/DefaultRepositorySelector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#1134#1135#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/log4j-1.2.17-sources.jar!/org/apache/log4j/Hierarchy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="345" column="0" selection-start-line="345" selection-start-column="0" selection-end-line="345" selection-end-column="0" />
+          <folding>
+            <element signature="e#9715#9716#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/log4j-1.2.17-sources.jar!/org/apache/log4j/LogManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="217" column="0" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/log4j-1.2.17-sources.jar!/org/apache/log4j/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+          <folding>
+            <element signature="e#4532#4533#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/log4j-1.2.17-sources.jar!/org/apache/log4j/BasicConfigurator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/dao/DAOSQLite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <marker date="1490215440142" expanded="true" signature="883:920" ph="SELECT * FRO... tree" />
+            <marker date="1490215440142" expanded="true" signature="1351:1403" ph="SELECT * FRO... users" />
+            <marker date="1490215440142" expanded="true" signature="1465:1519" ph="SELECT size " />
+            <marker date="1490215440142" expanded="true" signature="1580:1630" ph="SELECT * FRO... tree" />
+            <marker date="1490215440142" expanded="true" signature="1689:1736" ph="UPDATE or IG... " />
+            <marker date="1490215440142" expanded="true" signature="1795:1824" ph="DELETE FROM " />
+            <marker date="1490215440142" expanded="true" signature="2032:2066" ph="SELECT data tree" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/logs/SQL.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/stage/Stage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="227" column="0" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
+          <folding>
+            <element signature="e#7505#7506#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="435" column="0" selection-start-line="435" selection-start-column="0" selection-end-line="435" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/css/CSS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/chooser/FileChooserModal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/columns/Columns.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Catty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="initializer##0;class#Catty#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/main_stage.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
+          <folding>
+            <element signature="n#AnchorPane#0;n#VBox#0;n#!!top" expanded="false" />
+            <element signature="n#StackPane#0;n#VBox#0;n#!!top" expanded="false" />
+            <element signature="n#TabPane#0;n#VBox#0;n#!!top" expanded="false" />
+            <element signature="n#StackPane#1;n#VBox#0;n#!!top" expanded="false" />
+            <element signature="n#stylesheets#0;n#VBox#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="290" column="40" selection-start-line="290" selection-start-column="40" selection-end-line="290" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/net/URLClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="572" column="0" selection-start-line="572" selection-start-column="0" selection-end-line="572" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/jre/lib/rt.jar!/sun/misc/Launcher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="181" column="0" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+          <folding>
+            <element signature="e#2976#2977#0" expanded="true" />
+            <element signature="e#3031#3032#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="487" column="0" selection-start-line="487" selection-start-column="0" selection-end-line="487" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/StringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="406" column="0" selection-start-line="406" selection-start-column="0" selection-end-line="406" selection-end-column="0" />
+          <folding>
+            <element signature="e#2871#2872#0" expanded="false" />
+            <element signature="e#2896#2897#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="2217" column="0" selection-start-line="2217" selection-start-column="0" selection-end-line="2217" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/tabs/TabFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="initializer##0;class#View#0" expanded="false" />
+            <element signature="method#showAsModal#0;class#View#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/login_stage.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/TextInputControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="349" column="48" selection-start-line="349" selection-start-column="48" selection-end-line="349" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/reflect/InvocationTargetException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="1773" column="0" selection-start-line="1773" selection-start-column="0" selection-end-line="1773" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-validator/5.4.1.Final/hibernate-validator-5.4.1.Final.jar!/org/hibernate/validator/internal/engine/ValueContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="e#2257#2258#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-validator/5.4.1.Final/hibernate-validator-5.4.1.Final.jar!/org/hibernate/validator/internal/engine/ValidatorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/stagecontrollers/LoginStageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="69" selection-end-column="44" />
+          <folding>
+            <element signature="initializer##0;class#LoginStageController#0" expanded="false" />
+            <element signature="method#handleSignInAsGuest#0;class#LoginStageController#0" expanded="false" />
+            <element signature="method#onStageShown#0;class#LoginStageController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>catty</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>javax.validation:validation-api:1.1.0.Final</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
