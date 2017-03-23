@@ -2,321 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7925fde3-fcdd-40b1-ae8f-fdce8ede2145" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_javax_el_3_0_1_b08.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_4_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/javax_validation_validation_api_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/log4j_log4j_1_2_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_xerial_sqlite_jdbc_3_16_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/controller/stagecontrollers/LoginStageController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Catty.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/Controller.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/DataController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/dao/DAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/dao/DAOSQLite.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/stagecontrollers/LoginStageController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/stagecontrollers/MainStageController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/stagecontrollers/StageController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/SQL.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/Model.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/file/AbstractFileObject.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/file/AbstractFileObjectFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/file/DirectoryObject.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/file/FileObject.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/mail/MailDriver.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/user/AbstractUser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/user/AbstractUserFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/user/Admin.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/user/Guest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/user/User.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/user/UserType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/validator/IValidator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/Recource.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/audios-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/books-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/catty-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/documents-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/palette-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sign-out-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/spritesheet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/videos-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/View.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/chooser/FileChooserModal.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/columns/AbstractColumnFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/columns/Columns.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/columns/TableColumnFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/columns/TreeTableColumnFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/context/RowContextMenu.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/CSS.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/blackOnWhite.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/caspian-no-transparency.bss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/caspian-no-transparency.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/caspian.bss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/caspian.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/center-btn-selected.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/center-btn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/dialog-confirm.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/dialog-confirm@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/dialog-error.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/dialog-error@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/dialog-fewer-details.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/dialog-fewer-details@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/dialog-information.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/dialog-information@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/dialog-more-details.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/dialog-more-details@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/dialog-warning.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/dialog-warning@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/embedded-qvga.bss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/embedded-qvga.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/embedded.bss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/embedded.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/fxvk-backspace-button.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/fxvk-capslock-button.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/fxvk-enter-button.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/fxvk-shift-button.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/fxvk.bss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/fxvk.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/highcontrast.bss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/highcontrast.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/images/backspace-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/images/capslock-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/images/enter-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/images/shift-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/images/vk-dark-pressed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/images/vk-dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/images/vk-hide.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/images/vk-light-pressed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/images/vk-light.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/images/vk-medium-pressed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/images/vk-medium.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/left-btn-selected.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/left-btn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/menu-shadow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/pattern-transparent.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/right-btn-selected.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/right-btn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/caspian/two-level-focus.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/highcontrast.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/macOS.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/mainScene.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/mainStage.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Background-Color-Black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Background-Color-Black@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Background-Color-White.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Background-Color-White@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Background-Color-Yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Background-Color-Yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Background-Color.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Background-Color@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bold-Black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bold-Black@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bold-White.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bold-White@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bold-Yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bold-Yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bold.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bold@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Break-Black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Break-Black@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Break-White.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Break-White@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Break-Yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Break-Yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Break.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Break@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets-Black-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets-Black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets-Black@2x-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets-Black@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets-White-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets-White.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets-White@2x-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets-White@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets-Yellow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets-Yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets-Yellow@2x-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets-Yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets@2x-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Bullets@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Center-Black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Center-Black@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Center-White.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Center-White@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Center-Yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Center-Yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Center.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Center@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Copy-Black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Copy-Black@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Copy-White.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Copy-White@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Copy-Yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Copy-Yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Copy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Copy@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Cut-Black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Cut-Black@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Cut-White.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Cut-White@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Cut-Yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Cut-Yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Cut.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Cut@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent-Black-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent-Black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent-Black@2x-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent-Black@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent-White-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent-White.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent-White@2x-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent-White@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent-Yellow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent-Yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent-Yellow@2x-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent-Yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent@2x-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Indent@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Italic-Black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Italic-Black@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Italic-White.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Italic-White@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Italic-Yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Italic-Yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Italic.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Italic@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Justify-Black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Justify-Black@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Justify-White.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Justify-White@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Justify-Yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Justify-Yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Justify.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Justify@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Left-Black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Left-Black@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Left-White.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Left-White@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Left-Yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Left-Yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Left@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered-Black-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered-Black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered-Black@2x-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered-Black@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered-White-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered-White.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered-White@2x-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered-White@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered-Yellow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered-Yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered-Yellow@2x-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered-Yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered@2x-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Numbered@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent-Black-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent-Black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent-Black@2x-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent-Black@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent-White-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent-White.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent-White@2x-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent-White@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent-Yellow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent-Yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent-Yellow@2x-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent-Yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent@2x-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Outdent@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Paste-Black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Paste-Black@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Paste-White.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Paste-White@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Paste-Yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Paste-Yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Paste.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Paste@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Right-Black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Right-Black@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Right-White.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Right-White@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Right-Yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Right-Yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Right@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Strikethrough-Black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Strikethrough-Black@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Strikethrough-White.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Strikethrough-White@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Strikethrough-Yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Strikethrough-Yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Strikethrough.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Strikethrough@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Text-Color-Black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Text-Color-Black@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Text-Color-White.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Text-Color-White@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Text-Color-Yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Text-Color-Yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Text-Color.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Text-Color@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Underline-Black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Underline-Black@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Underline-White.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Underline-White@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Underline-Yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Underline-Yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Underline.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/HTMLEditor-Underline@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/blackOnWhite.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/dialog-confirm.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/dialog-confirm@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/dialog-error.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/dialog-error@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/dialog-fewer-details.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/dialog-fewer-details@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/dialog-information.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/dialog-information@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/dialog-more-details.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/dialog-more-details@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/dialog-warning.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/dialog-warning@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/modena-embedded-performance.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/modena-no-transparency.bss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/modena-no-transparency.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/modena.bss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/modena.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/pattern-transparent.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/touch.bss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/touch.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/two-level-focus.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/whiteOnBlack.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modena/yellowOnBlack.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/modenaDark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/css/win7glass.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/fxml/Fxml.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/fxml/login_stage.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/fxml/main_stage.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/tabs/TabFactory.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/javax_mail.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/model/mail/Email.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/model/mail/EmailSender.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/model/mail/EmailService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/model/mail/EmailServiceGMail.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/model/mail/InstallCert.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/model/mail/SSLSender.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/model/mail/Sender.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/model/mail/TSLSender.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/model/mail/TestMail.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_javax_el_3_0_1_b08.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_javax_el_3_0_1_b08.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_4_1_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_4_1_Final.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/javax_validation_validation_api_1_1_0_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/javax_validation_validation_api_1_1_0_Final.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/log4j_log4j_1_2_17.xml" afterPath="$PROJECT_DIR$/.idea/libraries/log4j_log4j_1_2_17.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_xerial_sqlite_jdbc_3_16_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_xerial_sqlite_jdbc_3_16_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controller/stagecontrollers/LoginStageController.java" afterPath="$PROJECT_DIR$/src/main/java/controller/stagecontrollers/LoginStageController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
     </list>
     <ignored path="catty.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -339,23 +49,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LoginStageController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/stagecontrollers/LoginStageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="69" selection-end-column="44" />
+            <state relative-caret-position="191">
+              <caret line="32" column="139" selection-start-line="32" selection-start-column="139" selection-end-line="32" selection-end-column="139" />
               <folding>
-                <element signature="initializer##0;class#LoginStageController#0" expanded="false" />
                 <element signature="method#handleSignInAsGuest#0;class#LoginStageController#0" expanded="false" />
                 <element signature="method#onStageShown#0;class#LoginStageController#0" expanded="false" />
               </folding>
@@ -363,17 +62,116 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="323">
+              <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="42" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="EmailService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/mail/EmailService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmailServiceGMail.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/mail/EmailServiceGMail.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="91" column="32" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1001#1002#0" expanded="true" />
+                <element signature="e#1032#1033#0" expanded="true" />
+                <element signature="e#1498#1826#0" expanded="true" />
+                <element signature="e#1825#1826#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmailSender.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/mail/EmailSender.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_stage.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/login_stage.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" column="65" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/Model.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="722">
+              <caret line="159" column="44" selection-start-line="159" selection-start-column="44" selection-end-line="159" selection-end-column="44" />
+              <folding>
+                <element signature="initializer##0;class#Model#0" expanded="false" />
+                <element signature="method#getRoot#0;class#Model#0" expanded="false" />
+                <element signature="method#getFileObjectsAsList#0;class#Model#0" expanded="false" />
+                <element signature="method#recursiveTraversal#0;class#Model#0" expanded="false" />
+                <element signature="initializer##1;class#Model#0" expanded="false" />
+                <element signature="e#5008#5009#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Catty.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Catty.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="initializer##0;class#Catty#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MailDriver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/mail/MailDriver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="7" selection-end-column="55" />
+              <folding>
+                <marker date="1490307808337" expanded="false" signature="2108:3500" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -381,20 +179,40 @@
       <GitPushTagMode />
     </option>
   </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/controller/dao/DAOSQLite.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Catty.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/dao/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/view/css/CSS.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/main_stage.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/login_stage.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/view/View.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/tabs/TabFactory.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/view/context/RowContextMenu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/stagecontrollers/MainStageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/mail/SSLSender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/mail/TSLSender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/mail/Email.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/mail/Sender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/mail/Quickstart.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/mail/InstallCert.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/mail/SimpleOrderManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/mail/TestMail.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Model.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/login_stage.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controller/stagecontrollers/LoginStageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/mail/EmailService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/mail/EmailServiceGMail.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/mail/EmailSender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Catty.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/model/mail/MailDriver.java" />
       </list>
     </option>
   </component>
@@ -410,11 +228,16 @@
         <option name="mavenHome" value="Bundled (Maven 3)" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
+    <option name="width" value="1932" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -424,7 +247,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -442,9 +265,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -539,12 +359,71 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stagecontrollers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -553,7 +432,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.34627092" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="473" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="472" />
@@ -570,6 +449,9 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1061" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/javax.mail.jar!/" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -858,6 +740,7 @@
       <setting name="cmdLine" value="run-app" />
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
+      <setting name="depsClasspath" value="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
@@ -1077,6 +960,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -1105,42 +994,59 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="Bugs amended. Project restarted with Maven.">
+      <created>1490220839438</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1490220839438</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7925fde3-fcdd-40b1-ae8f-fdce8ede2145" name="Default" comment="" />
+      <created>1490274561095</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1490274561095</updated>
+      <workItem from="1490274595478" duration="23033000" />
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6063000" />
+    <option name="totallyTimeSpent" value="30114000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21145834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19832985" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2780127" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27589852" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="92" y="588" width="595" height="360" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="92" y="588" width="595" height="360" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1169,13 +1075,36 @@
       <collection />
     </option>
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Bugs amended. Project restarted with Maven." />
     <option name="LAST_COMMIT_MESSAGE" value="Bugs amended. Project restarted with Maven." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="20" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/stagecontrollers/MainStageController.java</url>
+          <line>600</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/javax/mail/mail/1.4/mail-1.4.jar!/javax/mail/Transport.class</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Catty.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="40" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1184,353 +1113,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/file/DirectoryObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/file/FileObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/file/AbstractFileObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/mail/MailDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/user/AbstractUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/user/AbstractUserFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/user/Admin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/user/Guest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/user/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/user/UserType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/columns/AbstractColumnFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/context/RowContextMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/fxml/Fxml.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Recource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/columns/TableColumnFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/columns/TreeTableColumnFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/stagecontrollers/MainStageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-          <folding>
-            <element signature="e#5896#6212#0" expanded="false" />
-            <element signature="e#6211#6212#0" expanded="false" />
-            <element signature="e#10047#10281#0" expanded="false" />
-            <element signature="e#10280#10281#0" expanded="false" />
-            <element signature="e#22502#22503#0" expanded="false" />
-            <element signature="e#22553#22554#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/AbstractStringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding>
-            <element signature="e#1369#1370#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/log4j-1.2.17-sources.jar!/org/apache/log4j/spi/DefaultRepositorySelector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="e#1134#1135#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/log4j-1.2.17-sources.jar!/org/apache/log4j/Hierarchy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="345" column="0" selection-start-line="345" selection-start-column="0" selection-end-line="345" selection-end-column="0" />
-          <folding>
-            <element signature="e#9715#9716#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/log4j-1.2.17-sources.jar!/org/apache/log4j/LogManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="217" column="0" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/log4j-1.2.17-sources.jar!/org/apache/log4j/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
-          <folding>
-            <element signature="e#4532#4533#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/log4j-1.2.17-sources.jar!/org/apache/log4j/BasicConfigurator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/dao/DAOSQLite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <marker date="1490215440142" expanded="true" signature="883:920" ph="SELECT * FRO... tree" />
-            <marker date="1490215440142" expanded="true" signature="1351:1403" ph="SELECT * FRO... users" />
-            <marker date="1490215440142" expanded="true" signature="1465:1519" ph="SELECT size " />
-            <marker date="1490215440142" expanded="true" signature="1580:1630" ph="SELECT * FRO... tree" />
-            <marker date="1490215440142" expanded="true" signature="1689:1736" ph="UPDATE or IG... " />
-            <marker date="1490215440142" expanded="true" signature="1795:1824" ph="DELETE FROM " />
-            <marker date="1490215440142" expanded="true" signature="2032:2066" ph="SELECT data tree" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/logs/SQL.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/stage/Stage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="227" column="0" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
-          <folding>
-            <element signature="e#7505#7506#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/Scene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="435" column="0" selection-start-line="435" selection-start-column="0" selection-end-line="435" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/css/CSS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/chooser/FileChooserModal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/columns/Columns.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Catty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="initializer##0;class#Catty#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/main_stage.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
-          <folding>
-            <element signature="n#AnchorPane#0;n#VBox#0;n#!!top" expanded="false" />
-            <element signature="n#StackPane#0;n#VBox#0;n#!!top" expanded="false" />
-            <element signature="n#TabPane#0;n#VBox#0;n#!!top" expanded="false" />
-            <element signature="n#StackPane#1;n#VBox#0;n#!!top" expanded="false" />
-            <element signature="n#stylesheets#0;n#VBox#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="290" column="40" selection-start-line="290" selection-start-column="40" selection-end-line="290" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/net/URLClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="572" column="0" selection-start-line="572" selection-start-column="0" selection-end-line="572" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/jre/lib/rt.jar!/sun/misc/Launcher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="181" column="0" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
-          <folding>
-            <element signature="e#2976#2977#0" expanded="true" />
-            <element signature="e#3031#3032#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/ClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="487" column="0" selection-start-line="487" selection-start-column="0" selection-end-line="487" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1558,7 +1144,7 @@
         <state relative-caret-position="340">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1568,21 +1154,10 @@
         <state relative-caret-position="210">
           <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="initializer##0;class#View#0" expanded="false" />
             <element signature="method#showAsModal#0;class#View#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/login_stage.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1598,7 +1173,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
           <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1614,9 +1188,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
           <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding>
-            <element signature="e#2257#2258#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1624,27 +1195,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/stagecontrollers/LoginStageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="69" selection-end-column="44" />
-          <folding>
-            <element signature="initializer##0;class#LoginStageController#0" expanded="false" />
-            <element signature="method#handleSignInAsGuest#0;class#LoginStageController#0" expanded="false" />
-            <element signature="method#onStageShown#0;class#LoginStageController#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1653,6 +1203,415 @@
         <state relative-caret-position="425">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/dao/DAOSQLite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="7" selection-end-column="31" />
+          <folding>
+            <marker date="1490215440142" expanded="true" signature="883:920" ph="SELECT * FRO... tree" />
+            <marker date="1490215440142" expanded="true" signature="1351:1403" ph="SELECT * FRO... users" />
+            <marker date="1490215440142" expanded="true" signature="1465:1519" ph="SELECT size " />
+            <marker date="1490215440142" expanded="true" signature="1580:1630" ph="SELECT * FRO... tree" />
+            <marker date="1490215440142" expanded="true" signature="1689:1736" ph="UPDATE or IG... " />
+            <marker date="1490215440142" expanded="true" signature="1795:1824" ph="DELETE FROM " />
+            <marker date="1490215440142" expanded="true" signature="2032:2066" ph="SELECT data tree" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/context/RowContextMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="58" column="56" selection-start-line="58" selection-start-column="56" selection-end-line="58" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/stagecontrollers/MainStageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="600" column="0" selection-start-line="600" selection-start-column="0" selection-end-line="600" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initialize#0;class#MainStageController#0" expanded="false" />
+            <element signature="method#initializeHeaderLayout#0;class#MainStageController#0" expanded="false" />
+            <element signature="method#initializeControls#0;class#MainStageController#0" expanded="false" />
+            <element signature="method#initializeUserBlock#0;class#MainStageController#0" expanded="false" />
+            <element signature="method#initializeSearchLayout#0;class#MainStageController#0" expanded="false" />
+            <element signature="method#initializeTabPane#0;class#MainStageController#0" expanded="false" />
+            <element signature="method#initializeWorkingLayout#0;class#MainStageController#0" expanded="false" />
+            <element signature="method#initializeWorkingTreeTable#0;class#MainStageController#0" expanded="false" />
+            <element signature="method#initializeWorkingStatusBar#0;class#MainStageController#0" expanded="false" />
+            <element signature="method#initializeSearchingLayout#0;class#MainStageController#0" expanded="false" />
+            <element signature="method#initializeDialogs#0;class#MainStageController#0" expanded="false" />
+            <element signature="method#handleSignOut#0;class#MainStageController#0" expanded="false" />
+            <element signature="method#handleAddFiles#0;class#MainStageController#0" expanded="false" />
+            <element signature="method#handleAddDirectory#0;class#MainStageController#0" expanded="false" />
+            <element signature="method#handleRemove#0;class#MainStageController#0" expanded="false" />
+            <element signature="method#handleSearch#0;class#MainStageController#0" expanded="false" />
+            <element signature="method#handleSearchCrossClicked#0;class#MainStageController#0" expanded="false" />
+            <element signature="method#handleRename#0;class#MainStageController#0" expanded="false" />
+            <element signature="method#handlePreview#0;class#MainStageController#0" expanded="false" />
+            <element signature="method#onStageShown#0;class#MainStageController#0" expanded="false" />
+            <element signature="method#parallelUpdate#0;class#MainStageController#0" expanded="false" />
+            <element signature="method#sequentialUpdate#0;class#MainStageController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/mail/Quickstart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/mail/Email.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+          <folding>
+            <element signature="e#6252#6253#0" expanded="false" />
+            <element signature="e#6320#6321#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/javaee-api-5.0-2.jar!/javax/mail/internet/MimeMessage.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="185" column="0" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="473" column="0" selection-start-line="473" selection-start-column="0" selection-end-line="473" selection-end-column="0" />
+          <folding>
+            <element signature="e#19296#19297#0" expanded="false" />
+            <element signature="e#19379#19380#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/com/sun/javafx/application/PlatformImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="295" column="0" selection-start-line="295" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/com/sun/javafx/application/LauncherImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="864" column="0" selection-start-line="864" selection-start-column="0" selection-end-line="864" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/javaee-api-5.0-2.jar!/org/apache/geronimo/mail/util/SessionUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/mail/mail/1.4/mail-1.4.jar!/javax/mail/Transport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#7677#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/javaee-api-5.0-2.jar!/javax/mail/internet/InternetAddress.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding>
+            <element signature="e#1751#1752#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/AbstractStringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding>
+            <element signature="e#1327#1328#0" expanded="false" />
+            <element signature="e#1369#1370#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/StringBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="667" column="0" selection-start-line="667" selection-start-column="0" selection-end-line="667" selection-end-column="0" />
+          <folding>
+            <element signature="e#4139#4140#0" expanded="false" />
+            <element signature="e#4164#4165#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/Hashtable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="136" column="35" selection-start-line="136" selection-start-column="35" selection-end-line="136" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/javaee-api-5.0-2.jar!/javax/mail/Session.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/mail/mail/1.4/mail-1.4.jar!/javax/mail/Session.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="122" column="94" selection-start-line="122" selection-start-column="94" selection-end-line="122" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/appengine/appengine-api-1.0-sdk/1.5.1/appengine-api-1.0-sdk-1.5.1.jar!/javax/mail/Session.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="187" column="0" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="719" column="0" selection-start-line="719" selection-start-column="0" selection-end-line="719" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="1057" column="0" selection-start-line="1057" selection-start-column="0" selection-end-line="1057" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/invoke/MethodHandleImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="968" column="0" selection-start-line="968" selection-start-column="0" selection-end-line="968" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/javaee-api-5.0-2.jar!/javax/mail/Transport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/mail/TSLSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#480#671#0" expanded="false" />
+            <element signature="e#670#671#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/mail/InstallCert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2040">
+          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/mail/SimpleOrderManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/mail/SSLSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="24" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#619#810#0" expanded="false" />
+            <element signature="e#809#810#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/mail/Sender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="32" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/mail/TestMail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/validation-api-1.1.0.Final.jar!/javax/validation/constraints/Pattern.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="159" column="44" selection-start-line="159" selection-start-column="44" selection-end-line="159" selection-end-column="44" />
+          <folding>
+            <element signature="initializer##0;class#Model#0" expanded="false" />
+            <element signature="method#getRoot#0;class#Model#0" expanded="false" />
+            <element signature="method#getFileObjectsAsList#0;class#Model#0" expanded="false" />
+            <element signature="method#recursiveTraversal#0;class#Model#0" expanded="false" />
+            <element signature="initializer##1;class#Model#0" expanded="false" />
+            <element signature="e#5008#5009#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/login_stage.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="65" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/stagecontrollers/LoginStageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="32" column="139" selection-start-line="32" selection-start-column="139" selection-end-line="32" selection-end-column="139" />
+          <folding>
+            <element signature="method#handleSignInAsGuest#0;class#LoginStageController#0" expanded="false" />
+            <element signature="method#onStageShown#0;class#LoginStageController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/mail/EmailServiceGMail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="91" column="32" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1001#1002#0" expanded="true" />
+            <element signature="e#1032#1033#0" expanded="true" />
+            <element signature="e#1498#1826#0" expanded="true" />
+            <element signature="e#1825#1826#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/mail/EmailSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/mail/EmailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="42" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/mail/MailDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="7" selection-end-column="55" />
+          <folding>
+            <marker date="1490307808337" expanded="false" signature="2108:3500" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Catty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="initializer##0;class#Catty#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1721,11 +1680,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>javax.validation:validation-api:1.1.0.Final</last-edited>
+          <last-edited>javax.mail</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.34627092" />
               </list>
             </option>
           </splitter-proportions>
