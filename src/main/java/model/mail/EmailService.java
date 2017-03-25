@@ -5,7 +5,7 @@ import java.io.File;
 /**
  * specifies contract for sending email messages
  */
-public interface EmailService {
+interface EmailService {
 
     /**
      * performs sending basic email message
@@ -13,6 +13,7 @@ public interface EmailService {
      * @param toEmail - who gets email message
      * @param subject - subject of email message
      * @param messageText - message content
+     * @return True if and only if mail delivered
      */
     void sendMessage(String fromEmail, String toEmail, String subject, String messageText);
 
@@ -24,6 +25,6 @@ public interface EmailService {
      * @param messageText - message content
      * @param resource -  - resource attached to the email
      */
-    void sendMessageWithAttachment(String fromEmail, String toEmail, String subject,
-                                   String messageText, File resource);
+//    void sendMessageWithAttachment(String fromEmail, String toEmail, String subject,
+//                                   String messageText, File resource);
 }

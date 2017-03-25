@@ -1,10 +1,10 @@
 package controller.dao;
 
+import javafx.scene.control.TreeItem;
 import model.file.AbstractFileObject;
 import model.file.AbstractFileObjectFactory;
 import model.user.AbstractUser;
 import model.user.AbstractUserFactory;
-import javafx.scene.control.TreeItem;
 import org.apache.log4j.Logger;
 
 import java.io.*;
@@ -13,6 +13,7 @@ import java.security.MessageDigest;
 import java.sql.*;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.locks.LockSupport;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
@@ -39,46 +40,55 @@ public class DAOSQLite implements DAO<AbstractFileObject, AbstractUser> {
 
     private PreparedStatement pullFile;
 
+    public boolean isConnected() {
+        return connection == null;
+    }
+
 	@Override
 	public void  connect(String url) throws SQLException {
         rwLock.writeLock().lock();
+        SQLException exception = null;
 
-        try (Connection conn = DriverManager.getConnection(JDBC_PREFIX + url)) {
-            try (Statement stm = conn.createStatement()) {
-                userQuery = conn.prepareStatement("SELECT * FROM users WHERE login = ? and password = ?");
-                userQuotaQuery = conn.prepareStatement("SELECT size FROM tree WHERE uploaded = ? and owner = ?");
+        try {
+            connection = DriverManager.getConnection(JDBC_PREFIX + url);
+            statement = connection.createStatement();
+            userQuery = connection.prepareStatement("SELECT * FROM users WHERE login = ? and password = ?");
+            userQuotaQuery = connection.prepareStatement("SELECT size FROM tree WHERE uploaded = ? and owner = ?");
 
-                rootDirQuery = conn.prepareStatement("SELECT * FROM tree WHERE name = ? and parentID = ?");
+            rootDirQuery = connection.prepareStatement("SELECT * FROM tree WHERE name = ? and parentID = ?");
 
-                updateFile = conn.prepareStatement("UPDATE or IGNORE tree SET name = ? WHERE ID = ?");
-                removeFiles = conn.prepareStatement("DELETE FROM tree WHERE id = ?");
-                addFile = conn.prepareStatement("INSERT OR IGNORE INTO tree (parentID, name, owner, size, uploaded, data) VALUES(?, ?, ?, ?, ?, ?)");
-                pullFile = conn.prepareStatement("SELECT data FROM tree WHERE ID = ?");
+            updateFile = connection.prepareStatement("UPDATE or IGNORE tree SET name = ? WHERE ID = ?");
+            removeFiles = connection.prepareStatement("DELETE FROM tree WHERE id = ?");
+            addFile = connection.prepareStatement("INSERT OR IGNORE INTO tree (parentID, name, owner, size, uploaded, data) VALUES(?, ?, ?, ?, ?, ?)");
+            pullFile = connection.prepareStatement("SELECT data FROM tree WHERE ID = ?");
 
-                log.debug("Connected");
-
-                // no errors occurred
-                // assign object fields
-                connection = conn;
-                statement = stm;
+            log.debug("Connected");
+            } catch (SQLException e) {
+                log.fatal("Database connection error occurred!", e);
+                exception = e;
+            } finally {
+                rwLock.writeLock().unlock();
+                if (exception != null)
+                    throw exception;
             }
-        } catch (SQLException e) {
-            log.fatal("Database connection error occurred!", e);
-        } finally {
-            rwLock.writeLock().unlock();
         }
-    }
 
 	@Override
 	public void disconnect() throws SQLException {
 	    rwLock.writeLock().lock();
         try {
-            statement.close();
-            connection.close();
+            if (statement != null)
+                statement.close();
+            if (connection != null)
+                connection.close();
 
             log.debug("Disconnected");
+
+            connection = null;
+            statement = null;
+            resultSet = null;
         } catch (SQLException e) {
-            log.fatal("Cannot disconnect from database!", e);
+            log.fatal("Database disconnection error occurred!", e);
             throw e;
         }
         finally {
