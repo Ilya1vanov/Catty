@@ -16,8 +16,9 @@ import javax.validation.constraints.Size;
 import java.util.Arrays;
 import java.util.Set;
 
+@SuppressWarnings("CanBeFinal")
 public class LoginStageController implements StageController {
-	@FXML private javafx.scene.text.Text warningText;
+    @FXML private javafx.scene.text.Text warningText;
 	@FXML private javafx.scene.control.PasswordField passwordField;
 	@FXML private TextField loginField;
 	@FXML Button submitButton;
@@ -72,7 +73,8 @@ public class LoginStageController implements StageController {
 		warningText.setVisible(false);
 	}
 
-	private class Form {
+	@SuppressWarnings("CanBeFinal")
+    private class Form {
         @Size(min = 3, message = "Too short login!")
         @Pattern(regexp = "[a-zA-Z0-9_.-]*", message = "Available symbols: a-z, A-Z, 0-9, '.', '_', '-'.")
 	    private String login;

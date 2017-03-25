@@ -1,8 +1,7 @@
 package model.mail;
 
-import java.util.concurrent.Callable;
-
 /**
+ * Class that able to send e-mail.
  * Created by Илья on 25.03.2017.
  */
 interface EmailSender extends Runnable {

@@ -1,8 +1,5 @@
 package model.mail;
 
-import java.util.List;
-import java.util.concurrent.Callable;
-
 /**
  * Execution stream that performs sending email basic messages to specified
  * list of addresses
@@ -10,19 +7,19 @@ import java.util.concurrent.Callable;
 class AsyncEmailSender implements EmailSender {
 
     /** property - who sends email message */
-    private String from;
+    private final String from;
 
     /** property - who gets email message */
-    private String to;
+    private final String to;
 
     /** property - subject of email message */
-    private String subject;
+    private final String subject;
 
     /** property - message content */
-    private String messageText;
+    private final String messageText;
 
     /** property - email service */
-    private EmailService service;
+    private final EmailService service;
 
     /**
      * constructor of thread object that specifies parameters of email sending

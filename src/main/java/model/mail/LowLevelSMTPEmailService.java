@@ -5,24 +5,24 @@ import org.apache.log4j.Logger;
 
 import java.io.*;
 import java.net.Socket;
-import java.net.UnknownHostException;
 
 /**
+ * Perform mail sending.
  * Created by Илья on 25.03.2017.
  */
 public class LowLevelSMTPEmailService implements EmailService {
     private static final Logger log = Logger.getLogger(LowLevelSMTPEmailService.class);
 
-    /** smtp message sormat */
-    private static String HELO = "HELO smtp.gmail.com";
-    private static String MAIL_FROM = "MAIL FROM: ";
-    private static String RCPT_TO = "RCPT TO: ";
-    private static String DATA = "DATA ";
-    private static String FROM = "from: ";
-    private static String SUBJECT = "subject: ";
-    private static String TO = "to: ";
-    private static String NEW_LINE = "\n";
-    private static String END = ".";
+    /** smtp message format */
+    private static final String HELO = "HELO smtp.gmail.com";
+    private static final String MAIL_FROM = "MAIL FROM: ";
+    private static final String RCPT_TO = "RCPT TO: ";
+    private static final String DATA = "DATA ";
+    private static final String FROM = "from: ";
+    private static final String SUBJECT = "subject: ";
+    private static final String TO = "to: ";
+    private static final String NEW_LINE = "\n";
+    private static final String END = ".";
 
     /** output buffer */
     private PrintStream ps;
@@ -47,7 +47,6 @@ public class LowLevelSMTPEmailService implements EmailService {
      * @param toEmail - who gets email message
      * @param subject - subject of email message
      * @param messageText - message content
-     * @return True if and only if mail delivered
      */
     @Override
     public void sendMessage(String fromEmail, String toEmail, String subject, String messageText) {

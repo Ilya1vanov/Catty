@@ -13,17 +13,17 @@ import java.security.MessageDigest;
 import java.sql.*;
 import java.util.Date;
 import java.util.List;
-import java.util.concurrent.locks.LockSupport;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
+@SuppressWarnings("JpaQueryApiInspection")
 public class DAOSQLite implements DAO<AbstractFileObject, AbstractUser> {
     private static final Logger log = Logger.getLogger(DAOSQLite.class.getName());
 
 	private static final String JDBC_PREFIX = "jdbc:sqlite:";
 
     // make this lock fair to support starving protection
-    private ReadWriteLock rwLock = new ReentrantReadWriteLock();
+    private final ReadWriteLock rwLock = new ReentrantReadWriteLock();
 
 	private Connection connection;
 	private Statement statement;
@@ -32,7 +32,6 @@ public class DAOSQLite implements DAO<AbstractFileObject, AbstractUser> {
     private PreparedStatement userQuery;
     private PreparedStatement userQuotaQuery;
     private PreparedStatement rootDirQuery;
-    private String SQL_fileObjectQuery = "SELECT * FROM tree WHERE parentID = ?";
 
     private PreparedStatement updateFile;
     private PreparedStatement removeFiles;
@@ -131,7 +130,7 @@ public class DAOSQLite implements DAO<AbstractFileObject, AbstractUser> {
 	@Override
 	public TreeItem<AbstractFileObject> pullWorkingTree(String rootName) {
 	    rwLock.readLock().lock();
-        TreeItem root = null;
+        TreeItem<AbstractFileObject> root = null;
 
         try {
             rootDirQuery.setString(1, rootName);
@@ -234,6 +233,7 @@ public class DAOSQLite implements DAO<AbstractFileObject, AbstractUser> {
 
 	    ResultSet results;
         try {
+            String SQL_fileObjectQuery = "SELECT * FROM tree WHERE parentID = ?";
             PreparedStatement stm = connection.prepareStatement(SQL_fileObjectQuery);
             stm.setInt(1, root.getValue().getID());
             results = stm.executeQuery();
@@ -269,7 +269,7 @@ public class DAOSQLite implements DAO<AbstractFileObject, AbstractUser> {
      * @return The bytes of the file.
      */
     private byte[] readFile(String file) {
-        ByteArrayOutputStream bos = null;
+        ByteArrayOutputStream bos;
         File f = new File(file);
 
         try {
