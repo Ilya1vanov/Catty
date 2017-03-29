@@ -24,11 +24,53 @@ import java.util.*;
  * Created by ivanov on 02.03.2017.
  */
 public class Model {
+    /* default logger */
     private static final Logger log = Logger.getLogger(Model.class);
 
+    /* categories of stored files */
+    public static final String[] fileCategories = {"documents", "books", "audios", "videos"};
+
+    /* user object property to observe user changing */
     private static final ObjectProperty<AbstractUser> user = new SimpleObjectProperty<>();
 
+    /* currently used root */
     private static String currentRoot;
+
+    /* root map name -> TreeItem; observable to perform updating */
+    private static final ObservableMap<String, TreeItem<AbstractFileObject>> rootMap;
+
+    /* Validator to perform some kind of validation */
+    private static final Validator validator;
+
+    /* store previous search results to perform page displaying */
+    private static ObservableList<AbstractFileObject> searchResults;
+
+    /* validator initialize */
+    static {
+        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
+        validator = factory.getValidator();
+    }
+
+    /* root map initialize */
+    static {
+        HashMap<String, TreeItem<AbstractFileObject>> hashMap = new HashMap<>();
+        for (String category : fileCategories)
+            hashMap.put(category, DataController.dao.pullWorkingTree(category));
+
+        rootMap = new ObservableMapWrapper<>(hashMap);
+
+        // debug
+        rootMap.addListener(new InvalidationListener() {
+            @Override
+            public void invalidated(javafx.beans.Observable observable) {
+                log.info("RootMap invalid! Updating...");
+            }
+        });
+    }
+
+    public static Validator getValidator() {
+        return validator;
+    }
 
     /**
      * Returns root of the currently shown file hierarchy.
@@ -46,8 +88,6 @@ public class Model {
         return currentRoot;
     }
 
-    private static ObservableList<AbstractFileObject> searchResults;
-
     public static ObservableList<AbstractFileObject> getSearchResults() {
         return searchResults;
     }
@@ -62,26 +102,6 @@ public class Model {
      */
     public static void setRoot(String currentRoot) {
         Model.currentRoot = currentRoot;
-    }
-
-    private static final ObservableMap<String, TreeItem<AbstractFileObject>> rootMap;
-
-    public static final String[] fileCategories = {"documents", "books", "audios", "videos"};
-
-
-    static {
-        HashMap<String, TreeItem<AbstractFileObject>> hashMap = new HashMap<>();
-        for (String category : fileCategories)
-            hashMap.put(category, DataController.dao.pullWorkingTree(category));
-
-        rootMap = new ObservableMapWrapper<>(hashMap);
-
-        rootMap.addListener(new InvalidationListener() {
-            @Override
-            public void invalidated(javafx.beans.Observable observable) {
-                log.info("RootMap invalid! Updating...");
-            }
-        });
     }
 
     public static ObjectProperty<AbstractUser> userProperty() {
@@ -146,19 +166,5 @@ public class Model {
      */
     public static void update() {
         rootMap.put(currentRoot, DataController.dao.pullWorkingTree(currentRoot));
-    }
-
-    /**
-     * Validator to perform some kind of validation.
-     */
-    private static final Validator validator;
-
-    static {
-        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
-        validator = factory.getValidator();
-    }
-
-    public static Validator getValidator() {
-        return validator;
     }
 }

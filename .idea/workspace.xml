@@ -2,7 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7925fde3-fcdd-40b1-ae8f-fdce8ede2145" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_beanutils_2_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_configuration2_2_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/qaplug_profiles.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/model/dirmanager/TempDirManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/model/quotatimer/QuotaTimer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/properties/PropertiesLoader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/properties/PropertiesSetter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/xml/stages.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/model/browser/DesktopBrowser.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/view/columns/AbstractColumnFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/view/columns/Columns.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/view/columns/TableColumnFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/view/columns/TreeTableColumnFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/view/tabs/TabFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/logs/SQL.log" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/db" afterPath="$PROJECT_DIR$/src/main/resources/db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
@@ -14,27 +32,24 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/javax_validation_validation_api_1_1_0_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/javax_validation_validation_api_1_1_0_Final.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/log4j_log4j_1_2_17.xml" afterPath="$PROJECT_DIR$/.idea/libraries/log4j_log4j_1_2_17.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_xerial_sqlite_jdbc_3_16_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_xerial_sqlite_jdbc_3_16_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catty.iml" afterPath="$PROJECT_DIR$/catty.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Catty.java" afterPath="$PROJECT_DIR$/src/main/java/Catty.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controller/DataController.java" afterPath="$PROJECT_DIR$/src/main/java/controller/DataController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controller/dao/DAO.java" afterPath="$PROJECT_DIR$/src/main/java/controller/dao/DAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controller/dao/DAOSQLite.java" afterPath="$PROJECT_DIR$/src/main/java/controller/dao/DAOSQLite.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controller/stagecontrollers/LoginStageController.java" afterPath="$PROJECT_DIR$/src/main/java/controller/stagecontrollers/LoginStageController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controller/stagecontrollers/MainStageController.java" afterPath="$PROJECT_DIR$/src/main/java/controller/stagecontrollers/MainStageController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/Model.java" afterPath="$PROJECT_DIR$/src/main/java/model/Model.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/file/AbstractFileObject.java" afterPath="$PROJECT_DIR$/src/main/java/model/file/AbstractFileObject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/mail/AsyncEmailSender.java" afterPath="$PROJECT_DIR$/src/main/java/model/mail/AsyncEmailSender.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/mail/LowLevelSMTPEmailService.java" afterPath="$PROJECT_DIR$/src/main/java/model/mail/LowLevelSMTPEmailService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/mail/MailDriver.java" afterPath="$PROJECT_DIR$/src/main/java/model/mail/MailDriver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/user/AbstractUser.java" afterPath="$PROJECT_DIR$/src/main/java/model/user/AbstractUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/user/AbstractUserFactory.java" afterPath="$PROJECT_DIR$/src/main/java/model/user/AbstractUserFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/user/Admin.java" afterPath="$PROJECT_DIR$/src/main/java/model/user/Admin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/user/UserType.java" afterPath="$PROJECT_DIR$/src/main/java/model/user/UserType.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/View.java" afterPath="$PROJECT_DIR$/src/main/java/view/View.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/columns/Columns.java" afterPath="$PROJECT_DIR$/src/main/java/view/columns/Columns.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/context/RowContextMenu.java" afterPath="$PROJECT_DIR$/src/main/java/view/context/RowContextMenu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/logs/SQL.log" afterPath="$PROJECT_DIR$/src/main/logs/SQL.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/main_stage.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/main_stage.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/mail/AsyncEmailSender.java" afterPath="$PROJECT_DIR$/src/main/java/mail/AsyncEmailSender.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/mail/EmailSender.java" afterPath="$PROJECT_DIR$/src/main/java/mail/EmailSender.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/mail/EmailService.java" afterPath="$PROJECT_DIR$/src/main/java/mail/EmailService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/mail/LowLevelSMTPEmailService.java" afterPath="$PROJECT_DIR$/src/main/java/mail/LowLevelSMTPEmailService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/mail/MailDriver.java" afterPath="$PROJECT_DIR$/src/main/java/mail/MailDriver.java" />
     </list>
     <ignored path="catty.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,34 +75,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainStageController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/stagecontrollers/MainStageController.java">
+      <file leaf-file-name="RowContextMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/view/context/RowContextMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="613" column="104" selection-start-line="613" selection-start-column="104" selection-end-line="613" selection-end-column="104" />
+            <state relative-caret-position="765">
+              <caret line="52" column="42" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DesktopBrowser.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/view/browser/DesktopBrowser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TempDirManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/dirmanager/TempDirManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileChooserModal.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/view/chooser/FileChooserModal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
               <folding>
-                <element signature="method#initialize#0;class#MainStageController#0" expanded="false" />
-                <element signature="method#initializeHeaderLayout#0;class#MainStageController#0" expanded="false" />
-                <element signature="method#initializeControls#0;class#MainStageController#0" expanded="false" />
-                <element signature="method#initializeUserBlock#0;class#MainStageController#0" expanded="false" />
-                <element signature="method#initializeSearchLayout#0;class#MainStageController#0" expanded="false" />
-                <element signature="method#initializeTabPane#0;class#MainStageController#0" expanded="false" />
-                <element signature="method#initializeWorkingLayout#0;class#MainStageController#0" expanded="false" />
-                <element signature="method#initializeWorkingTreeTable#0;class#MainStageController#0" expanded="false" />
-                <element signature="method#initializeWorkingStatusBar#0;class#MainStageController#0" expanded="false" />
-                <element signature="method#initializeSearchingLayout#0;class#MainStageController#0" expanded="false" />
-                <element signature="method#initializeDialogs#0;class#MainStageController#0" expanded="false" />
-                <element signature="method#handleSignOut#0;class#MainStageController#0" expanded="false" />
-                <element signature="method#handleAddFiles#0;class#MainStageController#0" expanded="false" />
-                <element signature="method#handleAddDirectory#0;class#MainStageController#0" expanded="false" />
-                <element signature="method#handleRemove#0;class#MainStageController#0" expanded="false" />
-                <element signature="method#handleSearch#0;class#MainStageController#0" expanded="false" />
-                <element signature="method#handleSearchCrossClicked#0;class#MainStageController#0" expanded="false" />
-                <element signature="method#handleRename#0;class#MainStageController#0" expanded="false" />
-                <element signature="method#onStageShown#0;class#MainStageController#0" expanded="false" />
-                <element signature="method#parallelUpdate#0;class#MainStageController#0" expanded="false" />
-                <element signature="method#sequentialUpdate#0;class#MainStageController#0" expanded="false" />
+                <element signature="imports" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MailDriver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/mail/MailDriver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+              <folding>
+                <element signature="method#sendProposal#0;class#MailDriver#0" expanded="false" />
+                <element signature="method#sendReport#0;class#MailDriver#0" expanded="false" />
+                <element signature="method#bodyBuilder#0;class#MailDriver#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="columns.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/props/columns.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -97,8 +146,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Singleton" />
+        <option value="Class" />
+        <option value="Tag Library Descriptor" />
       </list>
     </option>
   </component>
@@ -120,57 +171,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/model/mail/TSLSender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/mail/Email.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/mail/Sender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/mail/Quickstart.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/mail/InstallCert.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/mail/SimpleOrderManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/mail/TestMail.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/browser/DesktopBrowser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/mail/MailTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/mail/EmailServiceGMail.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/mail/LowLevelSMTPEmailSender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/mail/AsyncEmailSender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/user/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/file/AbstractFileObjectFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/user/Guest.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/stagecontrollers/StageController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/css/CSS.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/css/CSSDriver.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/model/file/DirectoryObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/file/FileObject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/view/columns/TableColumnFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/view/columns/TreeTableColumnFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/chooser/FileChooserModal.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/context/RowContextMenu.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/login_stage.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controller/stagecontrollers/LoginStageController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/css/macOS.css" />
         <option value="$PROJECT_DIR$/src/main/resources/css/modena/two-level-focus.css" />
-        <option value="$PROJECT_DIR$/src/main/java/view/columns/Columns.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/user/AbstractUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Catty.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mail.properties" />
         <option value="$PROJECT_DIR$/src/main/java/controller/dao/DAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/mail/EmailService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/css/highcontrast.css" />
-        <option value="$PROJECT_DIR$/src/main/java/view/columns/AbstractColumnFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/mail/EmailSender.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/file/AbstractFileObject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/mail/LowLevelSMTPEmailService.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/user/Admin.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/user/AbstractUserFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/dirmanager/TempDirManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/quotatimer/SQuotaTimer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/quotatimer/QuotaTimer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/mail/LowLevelSMTPEmailService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/DAOSQLite.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/DAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/dao/DAOSQLite.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/DataController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/main_stage.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Model.java" />
-        <option value="$PROJECT_DIR$/src/main/java/view/View.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/columns/TableColumnFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/columns/TreeTableColumnFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/columns/AbstractColumnFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/view/columns/PropertiesSetter.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/xml/tables.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/MyPropertyFileStore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PropertiesLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/columns/Columns.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/controller/stagecontrollers/MainStageController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/main_stage.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/Catty.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/xml/stages.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/properties/PropertiesSetter.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/props/columns.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Model.java" />
+        <option value="$PROJECT_DIR$/src/main/java/properties/PropertiesLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/mail/MailDriver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/View.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mail/MailDriver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/browser/DesktopBrowser.java" />
       </list>
     </option>
   </component>
@@ -242,9 +293,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -295,14 +343,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.JavaDocs" value="true" />
+    <property name="Repository.Attach.Sources" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.34627092" />
@@ -324,10 +397,15 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/javax.mail.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/commons-configuration2-2.1.1.jar!/" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://H:/Dropbox/ВМСИС/4-й семестр/КПП/epam/catty/src/main/java/model/mail/MailTest.java" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="H:\Dropbox\ВМСИС\4-й семестр\КПП\epam\catty\src\main\resources" />
       <recent name="H:\Dropbox\ВМСИС\4-й семестр\КПП\epam\catty\src\main\java" />
@@ -888,7 +966,12 @@
       <workItem from="1490339457765" duration="2763000" />
       <workItem from="1490366326977" duration="7227000" />
       <workItem from="1490435676910" duration="27907000" />
-      <workItem from="1490479096081" duration="3995000" />
+      <workItem from="1490479096081" duration="7958000" />
+      <workItem from="1490490021997" duration="29137000" />
+      <workItem from="1490565565005" duration="149000" />
+      <workItem from="1490622118355" duration="12069000" />
+      <workItem from="1490701001154" duration="14894000" />
+      <workItem from="1490798901671" duration="843000" />
     </task>
     <task id="LOCAL-00002" summary="Email services added. GMail API cause some problems. Hibernate validation API added.">
       <created>1490308032459</created>
@@ -925,11 +1008,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490482777770</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Lost commit. Pre-refactor">
+      <created>1490484422033</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1490484422033</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73109000" />
+    <option name="totallyTimeSpent" value="134164000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -937,33 +1027,35 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2780127" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19791667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16666667" sideWeight="0.49577168" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2780127" sideWeight="0.49791667" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2780127" sideWeight="0.49791667" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19791667" sideWeight="0.50422835" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20833333" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="59" y="588" width="628" height="360" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1014,12 +1106,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/controller/stagecontrollers/MainStageController.java</url>
-          <line>575</line>
+          <line>559</line>
           <properties />
-          <option name="timeStamp" value="63" />
+          <option name="timeStamp" value="71" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="64" />
+      <option name="time" value="94" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1028,216 +1120,25 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/mail/EmailServiceGMail.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/mail/Sender.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/net/Socket.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/columns/AbstractColumnFactory.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-configuration2/2.1.1/commons-configuration2-2.1.1-sources.jar!/org/apache/commons/configuration2/convert/DefaultListDelimiterHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="53" column="41" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="41" />
+        <state relative-caret-position="-258">
+          <caret line="66" column="62" selection-start-line="66" selection-start-column="62" selection-end-line="66" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/io/FilterOutputStream.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-configuration2/2.1.1/commons-configuration2-2.1.1-sources.jar!/org/apache/commons/configuration2/convert/AbstractListDelimiterHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1165">
-          <caret line="44" column="6" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/stage/Stage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="174" column="0" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
-          <caret line="175" column="0" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
-          <caret line="177" column="0" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
-          <caret line="176" column="0" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/file/AbstractFileObjectFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/user/UserType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/user/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/LinkedHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4201">
-          <caret line="380" column="18" selection-start-line="380" selection-start-column="18" selection-end-line="380" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/Comparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="108" column="17" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/file/DirectoryObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding>
-            <element signature="e#135#136#0" expanded="false" />
-            <element signature="e#191#192#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/file/FileObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="17">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/stagecontrollers/StageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/user/Guest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/util/Callback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/columns/TableColumnFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="50" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/context/RowContextMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="52" column="42" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/css/macOS.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52479">
-          <caret line="3124" column="22" selection-start-line="3124" selection-start-column="22" selection-end-line="3124" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/css/modena/two-level-focus.css" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/css/mainScene.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/css/mainStage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/css/CSSDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-          <folding>
-            <element signature="initializer##0;class#CSSDriver#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/chooser/FileChooserModal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/columns/TreeTableColumnFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/columns/Columns.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="2596" column="0" selection-start-line="2596" selection-start-column="0" selection-end-line="2596" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="153">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1245,219 +1146,186 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="53" selection-start-line="0" selection-start-column="53" selection-end-line="0" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/mail/EmailService.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/com/sun/javafx/application/PlatformImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-          <folding />
+        <state relative-caret-position="218">
+          <caret line="325" column="0" selection-start-line="325" selection-start-column="0" selection-end-line="325" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/css/highcontrast.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/columns/TreeTableColumnFactory.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/tabs/TabFactory.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mail/LowLevelSMTPEmailService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="884">
+          <caret line="78" column="22" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/user/AbstractUser.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-configuration2/2.1.1/commons-configuration2-2.1.1-sources.jar!/org/apache/commons/configuration2/PropertiesConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
-          <folding />
+        <state relative-caret-position="17">
+          <caret line="209" column="13" selection-start-line="209" selection-start-column="13" selection-end-line="209" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Catty.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/quotatimer/QuotaTimer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
-          <folding>
-            <element signature="initializer##0;class#Catty#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="748">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/stagecontrollers/LoginStageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/mail/LowLevelSMTPEmailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/user/Admin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding>
-            <element signature="e#184#185#0" expanded="true" />
-            <element signature="e#249#250#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/user/AbstractUserFactory.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-configuration2/2.1.1/commons-configuration2-2.1.1-sources.jar!/org/apache/commons/configuration2/FileBasedConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-          <folding />
+          <caret line="33" column="65" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/columns/AbstractColumnFactory.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-configuration2/2.1.1/commons-configuration2-2.1.1-sources.jar!/org/apache/commons/configuration2/HierarchicalConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setWidthBehavior#0;class#AbstractColumnFactory#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="297">
+          <caret line="177" column="39" selection-start-line="177" selection-start-column="39" selection-end-line="177" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/main_stage.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="129" column="31" selection-start-line="129" selection-start-column="31" selection-end-line="129" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/login_stage.fxml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-configuration2/2.1.1/commons-configuration2-2.1.1-sources.jar!/org/apache/commons/configuration2/ex/ConfigurationException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-configuration2/2.1.1/commons-configuration2-2.1.1-sources.jar!/org/apache/commons/configuration2/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/nio/file/Paths.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/jre/lib/rt.jar!/sun/nio/fs/WindowsPath.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="612" column="0" selection-start-line="612" selection-start-column="0" selection-end-line="612" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="497" column="0" selection-start-line="497" selection-start-column="0" selection-end-line="497" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-configuration2/2.1.1/commons-configuration2-2.1.1-sources.jar!/org/apache/commons/configuration2/builder/fluent/Parameters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="336" column="0" selection-start-line="336" selection-start-column="0" selection-end-line="336" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/nio/file/FileSystems.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="175" column="0" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-configuration2/2.1.1/commons-configuration2-2.1.1-sources.jar!/org/apache/commons/configuration2/builder/FileBasedConfigurationBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/columns/TableColumnFactory.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/columns/Columns.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/TreeSortMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/TreeTableColumn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="825" column="23" selection-start-line="825" selection-start-column="23" selection-end-line="825" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="383" column="22" selection-start-line="383" selection-start-column="22" selection-end-line="383" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/SelectionMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="35" column="25" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/file/AbstractFileObject.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-configuration2/2.1.1/commons-configuration2-2.1.1-sources.jar!/org/apache/commons/configuration2/AbstractHierarchicalConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="120" column="19" selection-start-line="120" selection-start-column="19" selection-end-line="120" selection-end-column="19" />
-          <folding>
-            <element signature="method#AbstractFileObject#0;class#AbstractFileObject#0" expanded="false" />
-            <element signature="method#AbstractFileObject#1;class#AbstractFileObject#0" expanded="false" />
-            <element signature="method#getUploaded#0;class#AbstractFileObject#0" expanded="false" />
-            <element signature="e#3060#3061#0" expanded="true" />
-            <element signature="e#3082#3083#0" expanded="true" />
-            <element signature="method#toString#0;class#AbstractFileObject#0" expanded="false" />
-            <element signature="method#clone#0;class#AbstractFileObject#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="728">
+          <caret line="175" column="22" selection-start-line="175" selection-start-column="22" selection-end-line="175" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/View.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-configuration2/2.1.1/commons-configuration2-2.1.1-sources.jar!/org/apache/commons/configuration2/io/FileBased.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="132" column="23" selection-start-line="132" selection-start-column="23" selection-end-line="132" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="187">
+          <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Model.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-configuration2/2.1.1/commons-configuration2-2.1.1-sources.jar!/org/apache/commons/configuration2/XMLConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="132" column="33" selection-start-line="132" selection-start-column="33" selection-end-line="132" selection-end-column="33" />
-          <folding>
-            <element signature="method#getRoot#0;class#Model#0" expanded="false" />
-            <element signature="method#getFileObjectsAsList#0;class#Model#0" expanded="false" />
-            <element signature="method#recursiveTraversal#0;class#Model#0" expanded="false" />
-            <element signature="initializer##1;class#Model#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="209">
+          <caret line="981" column="16" selection-start-line="981" selection-start-column="16" selection-end-line="981" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/DataController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-configuration2/2.1.1/commons-configuration2-2.1.1-sources.jar!/org/apache/commons/configuration2/io/FileHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="218">
+          <caret line="760" column="16" selection-start-line="760" selection-start-column="16" selection-end-line="760" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/mail/MailDriver.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-configuration2/2.1.1/commons-configuration2-2.1.1.jar!/org/apache/commons/configuration2/io/FileHandler.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="59" column="10" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
-          <folding>
-            <element signature="method#bodyBuilder#0;class#MailDriver#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/mail/AsyncEmailSender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/mail/EmailSender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/dao/DAOSQLite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="225" column="4" selection-start-line="225" selection-start-column="4" selection-end-line="225" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#disconnect#0;class#DAOSQLite#0" expanded="false" />
-            <element signature="method#deleteFileObjects#0;class#DAOSQLite#0" expanded="false" />
-            <element signature="method#pushFileObject#0;class#DAOSQLite#0" expanded="false" />
-            <element signature="method#update#0;class#DAOSQLite#0" expanded="false" />
-            <element signature="method#pullFile#0;class#DAOSQLite#0" expanded="false" />
-            <marker date="1490482998860" expanded="true" signature="1701:1753" ph="SELECT * FRO... users" />
-            <marker date="1490482998860" expanded="true" signature="1815:1869" ph="SELECT size " />
-            <marker date="1490482998860" expanded="true" signature="1930:1980" ph="SELECT * FRO... tree" />
-            <marker date="1490482998860" expanded="true" signature="2039:2086" ph="UPDATE or IG... " />
-            <marker date="1490482998860" expanded="true" signature="2145:2174" ph="DELETE FROM " />
-            <marker date="1490482998860" expanded="true" signature="2382:2416" ph="SELECT data tree" />
-            <marker date="1490482998860" expanded="true" signature="7585:7622" ph="SELECT * FRO... tree" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/dao/DAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="200">
+          <caret line="283" column="16" selection-start-line="283" selection-start-column="16" selection-end-line="283" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/stagecontrollers/MainStageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="613" column="104" selection-start-line="613" selection-start-column="104" selection-end-line="613" selection-end-column="104" />
+        <state relative-caret-position="493">
+          <caret line="239" column="44" selection-start-line="239" selection-start-column="44" selection-end-line="239" selection-end-column="44" />
           <folding>
             <element signature="method#initialize#0;class#MainStageController#0" expanded="false" />
             <element signature="method#initializeHeaderLayout#0;class#MainStageController#0" expanded="false" />
@@ -1469,6 +1337,8 @@
             <element signature="method#initializeWorkingTreeTable#0;class#MainStageController#0" expanded="false" />
             <element signature="method#initializeWorkingStatusBar#0;class#MainStageController#0" expanded="false" />
             <element signature="method#initializeSearchingLayout#0;class#MainStageController#0" expanded="false" />
+            <element signature="method#initializeSearchingTable#0;class#MainStageController#0" expanded="false" />
+            <element signature="method#initializeSearchPagination#0;class#MainStageController#0" expanded="false" />
             <element signature="method#initializeDialogs#0;class#MainStageController#0" expanded="false" />
             <element signature="method#handleSignOut#0;class#MainStageController#0" expanded="false" />
             <element signature="method#handleAddFiles#0;class#MainStageController#0" expanded="false" />
@@ -1477,10 +1347,146 @@
             <element signature="method#handleSearch#0;class#MainStageController#0" expanded="false" />
             <element signature="method#handleSearchCrossClicked#0;class#MainStageController#0" expanded="false" />
             <element signature="method#handleRename#0;class#MainStageController#0" expanded="false" />
+            <element signature="method#handleOpen#0;class#MainStageController#0" expanded="false" />
             <element signature="method#onStageShown#0;class#MainStageController#0" expanded="false" />
             <element signature="method#parallelUpdate#0;class#MainStageController#0" expanded="false" />
             <element signature="method#sequentialUpdate#0;class#MainStageController#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/main_stage.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="152" column="43" selection-start-line="152" selection-start-column="43" selection-end-line="152" selection-end-column="43" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Catty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="19" column="60" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/properties/PropertiesSetter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="38" column="65" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/context/RowContextMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="52" column="42" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mail/EmailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Runnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mail/EmailSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mail/AsyncEmailSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/dirmanager/TempDirManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/chooser/FileChooserModal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/properties/PropertiesLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/props/columns.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/xml/stages.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="51" column="53" selection-start-line="51" selection-start-column="53" selection-end-line="51" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mail/MailDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+          <folding>
+            <element signature="method#sendProposal#0;class#MailDriver#0" expanded="false" />
+            <element signature="method#sendReport#0;class#MailDriver#0" expanded="false" />
+            <element signature="method#bodyBuilder#0;class#MailDriver#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/browser/DesktopBrowser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1541,7 +1547,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

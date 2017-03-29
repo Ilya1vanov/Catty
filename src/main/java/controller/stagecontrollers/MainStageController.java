@@ -2,21 +2,17 @@ package controller.stagecontrollers;
 
 import controller.DataController;
 import model.Model;
-import model.browser.DesktopBrowser;
+import view.browser.DesktopBrowser;
 import model.file.AbstractFileObject;
 import model.file.DirectoryObject;
 import model.file.FileObject;
-import model.mail.MailDriver;
+import mail.MailDriver;
 import model.user.AbstractUser;
 import org.apache.log4j.Logger;
 import view.chooser.FileChooserModal;
-import view.columns.Columns;
 import view.View;
-import view.columns.TableColumnFactory;
-import view.columns.TreeTableColumnFactory;
 import view.context.RowContextMenu;
 import view.css.CSSDriver;
-import view.tabs.TabFactory;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ListChangeListener;
@@ -35,7 +31,6 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -135,11 +130,6 @@ public class MainStageController implements StageController {
     }
 
     private void initializeTabPane() {
-        // create tabs and attach them to tabPane according to the list of file categories
-        for (String category : Model.fileCategories) {
-            tabPane.getTabs().add(TabFactory.getInstance(category));
-        }
-
         // deselect tabs. important cause otherwise selected tab
         // will be empty. selection will be fired manually below
         tabPane.getSelectionModel().clearSelection();
@@ -173,13 +163,6 @@ public class MainStageController implements StageController {
     private void initializeWorkingTreeTable() {
         // Working table settings
         workingTreeL__TreeTable.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
-//        workingTreeL__TreeTable.setFocusTraversable(false);
-
-        // creating TreeTableColumns
-        for (Map.Entry<String, Columns.ColumnModel> entry : Columns.getColumnsMap().entrySet())
-            workingTreeL__TreeTable
-                    .getColumns()
-                    .add((TreeTableColumn<AbstractFileObject, String>) (new TreeTableColumnFactory()).getColumn(entry.getKey(), entry.getValue()));
 
         // set buttons disable logic in working tree layout
         workingTreeL__TreeTable.getSelectionModel().getSelectedItems().addListener(new ListChangeListener<TreeItem<AbstractFileObject>>() {
@@ -199,7 +182,7 @@ public class MainStageController implements StageController {
                 }
                 if (event.getClickCount() == 2 && (!row.isEmpty()) && row.getItem() instanceof FileObject) {
                     AbstractFileObject rowData = row.getItem();
-                    System.out.println(rowData);
+                    log.debug(rowData);
                 }
             });
 
@@ -243,25 +226,17 @@ public class MainStageController implements StageController {
     }
 
     private void initializeSearchingLayout() {
+        // Disable add button if searching layout is visible
+        searchResultsLayout.visibleProperty().addListener((observable, oldValue, newValue) -> addButtonWrapper.setDisable(newValue));
+
+        initializeSearchingTable();
+
+        initializeSearchPagination();
+    }
+
+    private void initializeSearchingTable() {
         // Result table settings
         searchL__resultTable.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
-        searchL__resultTable.setPlaceholder(new Text("Your search did not match any documents"));
-//        searchL__resultTable.setFocusTraversable(false);
-
-        // creating TableColumns
-        for (Map.Entry<String, Columns.ColumnModel> entry : Columns.getColumnsMap().entrySet())
-            searchL__resultTable
-                    .getColumns()
-                    .add((TableColumn<AbstractFileObject, String>) (new TableColumnFactory()).getColumn(entry.getKey(), entry.getValue()));
-
-        // pagination index change listener
-        searchL__pagination.currentPageIndexProperty().addListener((observable, oldValue, newValue) -> {
-            int fromIndex = newValue.intValue() * View.rowsPerPage;
-            int toIndex = Math.min(fromIndex + View.rowsPerPage, Model.getSearchResults().size());
-            searchL__resultTable.setItems(FXCollections.observableArrayList(
-                    Model.getSearchResults().subList(fromIndex, toIndex)));
-            searchL__resultText.setText("Results on this page: " + String.valueOf(toIndex - fromIndex));
-        });
 
         // set buttons disable logic in search result layout
         searchL__resultTable.getSelectionModel().getSelectedItems().addListener(new ListChangeListener<AbstractFileObject>() {
@@ -270,9 +245,6 @@ public class MainStageController implements StageController {
                 removeButton.setDisable(c.getList().size() == 0);
             }
         });
-
-        // Disable add button if searching layout is visible
-        searchResultsLayout.visibleProperty().addListener((observable, oldValue, newValue) -> addButtonWrapper.setDisable(newValue));
 
         // same logic as a working tree table has
         searchL__resultTable.setRowFactory(param -> {
@@ -283,15 +255,27 @@ public class MainStageController implements StageController {
                 }
                 if (event.getClickCount() == 2 && (!row.isEmpty()) && row.getItem() instanceof FileObject) {
                     AbstractFileObject rowData = row.getItem();
-                    System.out.println(rowData);
+                    log.debug(rowData);
                 }
             });
+
             row.setOnContextMenuRequested(event -> {
                 TableRow<AbstractFileObject> source = (TableRow<AbstractFileObject>) event.getSource();
                 if (!source.isEmpty())
                     rowContext.show(source, event.getScreenX(), event.getScreenY());
             });
             return row;
+        });
+    }
+
+    private void initializeSearchPagination() {
+        // pagination index change listener
+        searchL__pagination.currentPageIndexProperty().addListener((observable, oldValue, newValue) -> {
+            int fromIndex = newValue.intValue() * View.ROWS_PER_PAGE;
+            int toIndex = Math.min(fromIndex + View.ROWS_PER_PAGE, Model.getSearchResults().size());
+            searchL__resultTable.setItems(FXCollections.observableArrayList(
+                    Model.getSearchResults().subList(fromIndex, toIndex)));
+            searchL__resultText.setText("Results on this page: " + String.valueOf(toIndex - fromIndex));
         });
     }
 
@@ -514,14 +498,14 @@ public class MainStageController implements StageController {
                     );
             Model.setSearchResults(searchResult);
 
-            if (searchResult.size() <= View.rowsPerPage) {
+            if (searchResult.size() <= View.ROWS_PER_PAGE) {
                 searchL__resultTable.refresh();
                 searchL__resultTable.setItems(searchResult);
                 searchL__pagination.setVisible(false);
                 searchL__resultText.setText("Results on this page: " + searchResult.size());
             }
             else {
-                searchL__pagination.setPageCount(searchResult.size() / View.rowsPerPage + 1);
+                searchL__pagination.setPageCount(searchResult.size() / View.ROWS_PER_PAGE + 1);
                 searchL__pagination.setCurrentPageIndex(1);
                 searchL__pagination.setCurrentPageIndex(0);
                 searchL__pagination.setVisible(true);

@@ -2,96 +2,80 @@ package view;
 
 import controller.Controller;
 import controller.stagecontrollers.StageController;
-import com.sun.istack.internal.NotNull;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
+import org.apache.commons.configuration2.Configuration;
+import org.apache.commons.configuration2.ex.ConfigurationException;
+import org.apache.commons.configuration2.plist.ParseException;
+import properties.PropertiesLoader;
+import properties.PropertiesSetter;
 
+import java.io.FileInputStream;
 import java.io.IOException;
-import java.lang.reflect.Method;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
- * Statically load stages and drive their mapping
+ * Statically stages, set their properties and drive their mapping.
  * Created by Илья on 05.03.2017.
  */
 public class View {
+    /* currently shown stage */
     private static String currentStage;
 
-    private static final HashMap<String, HashMap<String, Object>> stageProperties = new HashMap<>();
+    /* mapping stageName -> Stage */
+    private static final HashMap<String, Stage> STAGES = new HashMap<>();
 
-    private static final HashMap<String, Stage> stages = new HashMap<>();
+    /* rows per page, shown if the search results */
+    public static final int ROWS_PER_PAGE = 30;
 
-    public static final int rowsPerPage = 30;
+    /* names of the stages, storing in View */
+    private static final ArrayList stageNames = new ArrayList();
 
-    /*
-      Declare new stages and their properties here
-     */
+    /* Initialize STAGES and their properties */
     static {
-        // login stage
-        HashMap<String, Object> loginProperties = new HashMap<>();
-        loginProperties.put("Title", "Welcome");
-        loginProperties.put("MinWidth", 350.0);
-        loginProperties.put("MinHeight", 225.0);
-        loginProperties.put("Resizable", false);
-        stageProperties.put("login", loginProperties);
+        try {
+            LinkedHashMap<String, Configuration> map = PropertiesLoader.loadXMLConfiguration(new FileInputStream("src/main/resources/xml/STAGES.xml"), "name", "stage");
 
-        // main stage
-        HashMap<String, Object> mainProperties = new HashMap<>();
-        mainProperties.put("Title", "Catty");
-        mainProperties.put("MinWidth", 800.0);
-        mainProperties.put("MinHeight", 600.0);
-        mainProperties.put("Resizable", true);
-        stageProperties.put("main", mainProperties);
-    }
+            for (Map.Entry<String, Configuration> entry : map.entrySet()) {
+                String stageName = entry.getKey();
+                Stage stage = new Stage();
 
-    /*
-    Initialize stages and their properties
-     */
-    static {
-        for (Map.Entry<String, HashMap<String, Object>> stageEntry : stageProperties.entrySet()) {
-            Stage stage = new Stage();
+                try {
+                    PropertiesSetter.setProperties(stage, Stage.class, entry.getValue());
+                } catch (NoSuchMethodException | IllegalAccessException e) {
+                    e.printStackTrace();
+                }
 
-            // set stage properties
-            Method[] declaredMethods = Stage.class.getDeclaredMethods();
-            for (Map.Entry<String, Object> property : stageEntry.getValue().entrySet())
-                Arrays.stream(declaredMethods)
-                        .filter(method -> method.getName().equals("set" + property.getKey()))
-                        .findFirst()
-                        .ifPresent(method -> {
-                            try {
-                                method.invoke(stage, property.getValue());
-                            } catch (Exception e) {
-                                e.printStackTrace();
-                            }
-                        });
-
-            try {
-                // load scene from view/fxml/'stageName'_stage.fxml
+                // loadProperties scene from view/fxml/'stageName'_stage.fxml
                 FXMLLoader loader = new FXMLLoader();
-                loader.setLocation(View.class.getResource("../fxml/" + stageEntry.getKey() + "_stage.fxml"));
+                loader.setLocation(View.class.getResource("../fxml/" + stageName + "_stage.fxml"));
                 stage.setScene(new Scene(loader.load()));
 
-                // load and store controller
-                Controller.addController(stageEntry.getKey(), loader.getController());
+                // loadProperties and store controller
+                Controller.addController(stageName, loader.getController());
 
-                // set catty-icon to all stages
+                // set catty-icon to all STAGES
                 stage.getIcons().add(new Image(View.class.getResourceAsStream("../pics/catty-icon.png")));
 
-                stages.put(stageEntry.getKey(), stage);
-            } catch (IOException e) {
-                e.printStackTrace();
+                STAGES.put(stageName, stage);
+                stageNames.add(stageName);
             }
+        } catch (ParseException | ConfigurationException | IOException e) {
+            e.printStackTrace();
         }
     }
 
+    public static String[] getStageNames() {return (String[]) stageNames.toArray(); }
 
-    public static Stage getStage(@NotNull String stageName) {
-        return stages.get(stageName);
+    /**
+     * Returns stage according the given name.
+     * @param stageName name of the stage
+     * @return the stage to which the specified name is mapped, or null if this view contains no mapping for the given name
+     */
+    public static Stage getStage(String stageName) {
+        return STAGES.get(stageName);
     }
 
     /**
@@ -99,7 +83,7 @@ public class View {
      * @return Currently shown stage.
      */
     public static Stage getCurrentStage() {
-        return stages.get(currentStage);
+        return STAGES.get(currentStage);
     }
 
     /**
@@ -121,10 +105,10 @@ public class View {
      *                  view/fxml/'name of the stage'_stage.fxml
      * @throws RuntimeException if there are no loaded stage with the given name
      */
-    public static void hideAllAndShow(@NotNull String stageName) throws RuntimeException {
+    public static void hideAllAndShow(String stageName) throws RuntimeException {
         if (currentStage != null)
-            stages.get(currentStage).hide();
-        Stage newStage = stages.get(stageName);
+            STAGES.get(currentStage).hide();
+        Stage newStage = STAGES.get(stageName);
         if (newStage == null)
             throw new RuntimeException("No such stage: " + stageName);
         newStage.show();
@@ -133,19 +117,5 @@ public class View {
         // invoke onStageShown if Controller implements StageController interface
         if (Controller.getController(stageName) instanceof StageController)
             ((StageController) Controller.getController(stageName)).onStageShown();
-    }
-
-
-    public static void showAsModal(@NotNull String stageName) {
-        Stage stage = stages.get(stageName);
-        if (stage == null)
-            throw new RuntimeException("No such stage: " + stageName);
-
-        if (currentStage != null) {
-            stage.initModality(Modality.APPLICATION_MODAL);
-            stage.initOwner(getCurrentStage());
-        }
-
-        stage.show();
     }
 }

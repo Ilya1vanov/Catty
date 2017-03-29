@@ -44,7 +44,7 @@ public class DAOSQLite implements DAO<AbstractFileObject, AbstractUser> {
     }
 
 	@Override
-	public void  connect(String url) throws SQLException {
+	public void connect(String url) throws SQLException {
         rwLock.writeLock().lock();
         SQLException exception = null;
 

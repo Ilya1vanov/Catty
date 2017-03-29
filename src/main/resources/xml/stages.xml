@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<stages>
+    <stage name="login">
+        <title>Welcome!</title>
+        <minWidth>350.0</minWidth>
+        <minHeight>225.0</minHeight>
+        <resizable>false</resizable>
+    </stage>
+
+    <stage name="main">
+        <title>Catty</title>
+        <minWidth>800.0</minWidth>
+        <minHeight>600.0</minHeight>
+        <resizable>true</resizable>
+    </stage>
+</stages>
